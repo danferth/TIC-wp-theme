@@ -68,7 +68,7 @@ function twentyfourteen_setup() {
 	load_theme_textdomain( 'twentyfourteen', get_template_directory() . '/languages' );
 
 	// This theme styles the visual editor to resemble the theme style.
-	add_editor_style( array( 'css/editor-style.css', twentyfourteen_font_url(), 'genericons/genericons.css' ) );
+	add_editor_style( array( 'css/editor-style.css', tic_font_url(), 'genericons/genericons.css' ) );
 
 	// Add RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -220,6 +220,10 @@ function twentyfourteen_font_url() {
 
 	return $font_url;
 }
+function tic_font_url(){
+	$font_url = 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900&subset=latin,latin-ext';
+	return $font_url;
+}
 
 /**
  * Enqueue scripts and styles for the front end.
@@ -227,8 +231,8 @@ function twentyfourteen_font_url() {
  * @since Twenty Fourteen 1.0
  */
 function twentyfourteen_scripts() {
-	// Add Lato font, used in the main stylesheet.
-	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
+	// Add Source Sans Pro font, used in the main stylesheet.
+	wp_enqueue_style( 'tic-source-sans-pro', tic_font_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
@@ -270,7 +274,7 @@ add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
  * @since Twenty Fourteen 1.0
  */
 function twentyfourteen_admin_fonts() {
-	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
+	wp_enqueue_style( 'twentyfourteen-lato', tic_font_url(), array(), null );
 }
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'twentyfourteen_admin_fonts' );
 

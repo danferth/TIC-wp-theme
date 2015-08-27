@@ -102,8 +102,8 @@ button,
 input,
 select,
 textarea {
-	color: #2b2b2b;
-	font-family: Lato, sans-serif;
+	color: $grey-med;
+	font-family: $font;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -1913,7 +1913,7 @@ a.post-thumbnail:hover {
 
 .comment-reply-title,
 .comments-title {
-	font: 900 16px/1.5 Lato, sans-serif;
+	font: 900 16px/1.5 $font;
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -4556,7 +4556,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, a {
     margin:0;
     padding:.25em .5em;
     height:1.75em;
-    font:900 1.75em/1.75em "Source Sans Pro" sans-serif;
+    font:900 1.75em/1.75em $font;
     transition:background 325ms;
   }
 .tl_card_icon{
@@ -4583,7 +4583,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, a {
     }
     a{
       color:darken($grey-light, 10%);
-      font:400 .8em "Sorce Sans Pro", sans-serif;
+      font:400 .8em $font;
       text-shadow:0 1px 0 lighten($grey-light,23%);
       text-decoration:none;
       display:inline-block;
@@ -4609,7 +4609,7 @@ ul.tl_list{
         color:$green-dark;
         text-decoration:none;
         border-bottom:1px dashed rgba($green-reg,0);
-        font:400 .85em "Source Sans Pro", sans-serif;
+        font:400 .85em $font;
         &:hover{
           border-bottom:1px dashed $green-reg;
         }
