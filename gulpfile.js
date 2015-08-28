@@ -26,5 +26,5 @@ gulp.task('build-css',function(){
 
 //watch
 gulp.task('watch',function(){
-    gulp.watch('style.scss', ['build-css']);
+    gulp.watch('*.scss', ['build-css']);
 });

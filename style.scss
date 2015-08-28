@@ -103,7 +103,7 @@ input,
 select,
 textarea {
 	color: $grey-reg;
-	font-family: $font;
+	font-family: $font-body;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -138,10 +138,11 @@ h3,
 h4,
 h5,
 h6 {
-	color:darken($grey-reg, 5%);
+	color:$grey-dark;
 	clear: both;
 	font-weight: 700;
-	margin: 31px 0 10px;
+	font-family: $font-title;
+	margin: 31px 0 10px; 
 }
 
 h1 {
@@ -835,7 +836,7 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: $blue-dark;
+	background-color: $blue-black;
 	max-width: 1260px;
 	position: relative;
 	width: 100%;
@@ -874,7 +875,7 @@ span + .edit-link:before,
 /* Search in the header */
 
 .search-toggle {
-	background-color: $green-dark;
+	background-color: $green-black;
 	cursor: pointer;
 	float: right;
 	height: 48px;
@@ -885,7 +886,7 @@ span + .edit-link:before,
 
 .search-toggle:hover,
 .search-toggle.active {
-	background-color: $green-reg;
+	background-color: $green-dark;
 }
 
 .search-toggle:before {
@@ -909,7 +910,7 @@ span + .edit-link:before,
 }
 
 .search-box {
-	background-color: $green-reg;
+	background-color: $green-dark;
 	padding: 12px;
 }
 
@@ -948,14 +949,14 @@ span + .edit-link:before,
 }
 
 .site-navigation a:hover {
-	color: $green-reg;
+	color: $green-black;
 }
 
 .site-navigation .current_page_item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: $green-med;
+	color: $green-dark;
 	font-weight: 900;
 }
 
@@ -997,7 +998,7 @@ span + .edit-link:before,
 }
 
 .menu-toggle {
-	background-color: $blue-dark;
+	background-color: $blue-black;
 	border-radius: 0;
 	cursor: pointer;
 	height: 48px;
@@ -1096,14 +1097,15 @@ a.post-thumbnail:hover {
 	margin-bottom: 12px;
 	margin: 0 0 12px 0;
 	text-transform: uppercase;
+	color:$grey-reg;
 }
 
 .entry-title a {
-	color: $grey-dark;
+	color: $grey-reg;
 }
 
 .entry-title a:hover {
-	color: $grey-reg;
+	color: $grey-med;
 }
 
 .site-content .entry-header {
@@ -1888,7 +1890,7 @@ a.post-thumbnail:hover {
 
 .comment-reply-title,
 .comments-title {
-	font: 900 16px/1.5 $font;
+	font: 700 16px/1.5 $font-title;
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -4312,10 +4314,10 @@ a.post-thumbnail:hover {
   border: none;
 }
 .entry-content table thead {
-  font: bold .9em $font;
+  font: bold .9em $font-body;
 }
 .entry-content table tbody {
-  font: normal .8em $font;
+  font: normal .8em $font-body;
 }
 .entry-content table th, .entry-content table td {
   border: none;
@@ -4504,7 +4506,7 @@ a.post-thumbnail:hover {
     margin:0;
     padding:.25em .5em;
     height:1.75em;
-    font:900 1.75em/1.75em $font;
+    font:900 1.75em/1.75em $font-title;
     transition:background 325ms;
   }
 .tl_card_icon{
@@ -4531,7 +4533,7 @@ a.post-thumbnail:hover {
     }
     a{
       color:darken($grey-light, 10%);
-      font:400 .8em $font;
+      font:400 .8em $font-body;
       text-shadow:0 1px 0 lighten($grey-light,23%);
       text-decoration:none;
       display:inline-block;
@@ -4557,7 +4559,7 @@ ul.tl_list{
         color:$green-dark;
         text-decoration:none;
         border-bottom:1px dashed rgba($green-reg,0);
-        font:400 .85em $font;
+        font:400 .85em $font-body;
         &:hover{
           border-bottom:1px dashed $green-reg;
         }
