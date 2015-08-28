@@ -836,7 +836,7 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: $blue-black;
+	background-color: $nav-bg;
 	max-width: 1260px;
 	position: relative;
 	width: 100%;
@@ -956,7 +956,7 @@ span + .edit-link:before,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: $green-dark;
+	color: $green-reg;
 	font-weight: 900;
 }
 
@@ -998,7 +998,7 @@ span + .edit-link:before,
 }
 
 .menu-toggle {
-	background-color: $blue-black;
+	background-color: $nav-bg;
 	border-radius: 0;
 	cursor: pointer;
 	height: 48px;
@@ -2127,8 +2127,8 @@ a.post-thumbnail:hover {
 /* Secondary */
 
 #secondary {
-	background-color: $blue-dark;
-	border-top: 1px solid $blue-dark;
+	background-color: $nav-bg;
+	border-top: 1px solid $nav-bg;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	clear: both;
 	color: rgba(255, 255, 255, 0.7);
@@ -2791,7 +2791,7 @@ a.post-thumbnail:hover {
 }
 
 .site-footer {
-	background-color: $blue-dark;
+	background-color: $blue-black;
 	font-size: 12px;
 	position: relative;
 	z-index: 3;
@@ -3497,7 +3497,7 @@ a.post-thumbnail:hover {
 	}
 
 	.primary-navigation ul ul {
-		background-color: $green-dark;
+		background-color: $nav-second-bg;
 		float: left;
 		margin: 0;
 		position: absolute;
@@ -3526,13 +3526,13 @@ a.post-thumbnail:hover {
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: $green-dark;
+		background-color: $nav-hover;
 		color: #fff;
 	}
 
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
-		background-color: $green-reg;
+		background-color: $nav-second-hover;
 	}
 
 	.primary-navigation ul li:hover > ul,
@@ -3701,7 +3701,7 @@ a.post-thumbnail:hover {
 	}
 
 	.site:before {
-		background-color: $blue-dark;
+		background-color: $side-bg;
 		content: "";
 		display: block;
 		height: 100%;
@@ -3752,7 +3752,7 @@ a.post-thumbnail:hover {
 	}
 
 	.secondary-navigation ul ul {
-		background-color: $green-dark;
+		background-color: $nav-second-bg;
 		position: absolute;
 		top: 0;
 		left: -999em;
@@ -3766,13 +3766,13 @@ a.post-thumbnail:hover {
 
 	.secondary-navigation li:hover > a,
 	.secondary-navigation li.focus > a {
-		background-color: $green-dark;
+		background-color: $nav-side-hover;
 		color: #fff;
 	}
 
 	.secondary-navigation ul ul a:hover,
 	.secondary-navigation ul ul li.focus > a {
-		background-color: $green-reg;
+		background-color: $nav-second-hover;
 	}
 
 	.secondary-navigation ul li:hover > ul,
@@ -3802,9 +3802,7 @@ a.post-thumbnail:hover {
 	}
 
 	.footer-sidebar .widget {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing:    border-box;
-		box-sizing:         border-box;
+		box-sizing: border-box;
 		float: left;
 		padding: 0 30px;
 		width: 25%;
@@ -4501,7 +4499,7 @@ a.post-thumbnail:hover {
 } //end card
 .tl_card_h1{
     color:white;
-    text-shadow:0 1px 0 darken($blue-dark,15%);
+    text-shadow:0 1px 0 $blue-black;
     background:$blue-dark;
     margin:0;
     padding:.25em .5em;
@@ -4570,7 +4568,7 @@ ul.tl_list{
 .show_footer{bottom:0;}
 .fade_img{opacity:1;}
 .bigger{flex-grow:1;}
-.darker_h1{background:darken($blue-dark,5%);}
+.darker_h1{background:$blue-black;}
 
 
 

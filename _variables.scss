@@ -27,19 +27,30 @@ $brown-med:		 hsl(41.4, 51.6%, 42.9%);
 $brown-light:	 hsl(41.9, 58.6%, 61.2%);
 $brown-faint:	 hsl(40, 43%, 95%);
 
-$orange-black:	 hsl(33, 100%, 19%);
+$orange-black: hsl(33, 100%, 19%);
 $orange-dark:	 hsl(33, 100%, 33.5%);
 $orange-reg:	 hsl(32.7, 100%, 44.3%);
 $orange-med:	 hsl(32.7, 80.7%, 59.4%);
-$orange-light:	 hsl(32.8, 80.3%, 74.1%);
-$orange-faint:	 hsl(30, 67%, 94%);
+$orange-light: hsl(32.8, 80.3%, 74.1%);
+$orange-faint: hsl(30, 67%, 94%);
 
 $red-black:		 hsl(0, 95%, 15%);
 $red-dark:		 hsl(0, 94.55%, 21.57%);
-$red-reg:		 hsl(0, 94.44%, 35.29%);
-$red-med:		 hsl(0, 93.94%, 45.29%);
+$red-reg:		 	 hsl(0, 94.44%, 35.29%);
+$red-med:		 	 hsl(0, 93.94%, 45.29%);
 $red-light:		 hsl(0, 86.09%, 77.45%);
 $red-faint:		 hsl(0, 50%, 93.73%);
+
+//layout variables
+$nav-bg:						$blue-black;
+$nav-hover:					$green-black;
+$nav-second-bg: 		$green-black;
+$nav-second-hover:  $green-dark;
+$nav-side-bg:				$blue-black;
+$nav-side-hover:		$green-black;
+$nav-link-current:	$green-med;
+$side-bg:						$blue-black;
+
 
 //FONTS
 //Oswald:700,300|Source+Sans+Pro:400,300,700
