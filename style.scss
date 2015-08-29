@@ -114,7 +114,7 @@ body {
 }
 
 a {
-	color: $green-dark;
+	color: $orange-reg;
 	text-decoration: none;
 }
 
@@ -129,7 +129,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: $green-reg;
+	color: $orange-reg;
 }
 
 h1,
@@ -1273,7 +1273,25 @@ a.post-thumbnail:hover {
 .entry-summary a,
 .page-content a,
 .comment-content a {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom:1px dashed $orange-reg;
+	background:transparent;
+	transition:all 250ms;
+	padding:0 .15em;
+	display:inline-block;
+	position:relative;
+	z-index:1000;
+	&:before{
+		content:"";
+		width:100%;
+		height:0%;
+		z-index:-1;
+		background:rgba($orange-light,.4);
+		bottom:0;
+		left:0;
+		position:absolute;
+		transition: height 250ms;
+	}
 }
 
 .entry-content a:hover,
@@ -1285,6 +1303,11 @@ a.post-thumbnail:hover {
 .page-content a.button,
 .comment-content a.button {
 	text-decoration: none;
+	border-color:transparent;
+	color:$orange-dark;
+	&:before{
+		height:100%;
+	}
 }
 
 .entry-content table,
