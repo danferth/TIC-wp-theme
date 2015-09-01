@@ -41,6 +41,36 @@ $red-med:		 	 hsl(0, 93.94%, 45.29%);
 $red-light:		 hsl(0, 86.09%, 77.45%);
 $red-faint:		 hsl(0, 50%, 93.73%);
 
+//========================================
+//=============Variables==================
+//========================================
+
+//COLORS==================================
+$blue-light:	 hsl(202.2, 50.9%, 89.6%);
+$blue-reg:		 hsl(201.2, 93.5%, 36.3%);
+$blue-dark:		 hsl(201.4, 100%, 22.5%);
+//accent----------------------------------
+$green-light:	 hsl(78.9, 69%, 74.7%);
+$green-reg:	   hsl(78.7, 66.8%, 63.3%);
+$green-dark:	 hsl(78.2, 54.7%, 48.4%);
+//text------------------------------------
+$title-color-black:     black;
+$body-color-black:      rgba(black,.87);
+$secondary-color-black: rgba(black, .54);
+$tertiary-color-black:  rgba(black, .38);
+$faint-color-black:     rgba(black, .18);
+//---------------------------------------
+$title-color-white:     white;
+$body-color-white:      rgba(white,1);
+$secondary-color-white: rgba(white, .7);
+$tertiary-color-white:  rgba(white, .3);
+$faint-color-white:     rgba(white, .18);
+//FONTS=====================================
+//Oswald:700,300|Source+Sans+Pro:400,300,700
+$font-body: 	"Source Sans Pro", sans-serif;
+$font-title: 	"Oswald", sans-serif;
+//===========================================
+
 //layout variables
 $nav-bg:						$blue-black;
 $nav-hover:					$green-black;
@@ -50,9 +80,3 @@ $nav-side-bg:				$blue-black;
 $nav-side-hover:		$green-black;
 $nav-link-current:	$green-med;
 $side-bg:						$blue-black;
-
-
-//FONTS
-//Oswald:700,300|Source+Sans+Pro:400,300,700
-$font-body: 	"Source Sans Pro", sans-serif;
-$font-title: 	"Oswald", sans-serif;
