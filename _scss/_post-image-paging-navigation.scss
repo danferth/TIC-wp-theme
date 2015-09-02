@@ -1,0 +1,84 @@
+/**
+ * 6.7 Post/Image/Paging Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.nav-links {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	hyphens: auto;
+	word-wrap: break-word;
+}
+
+.post-navigation,
+.image-navigation {
+	margin: 24px auto 48px;
+	max-width: 474px;
+	padding: 0 10px;
+}
+
+.post-navigation a,
+.image-navigation .previous-image,
+.image-navigation .next-image {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 11px 0 12px;
+	width: 100%;
+}
+
+.post-navigation .meta-nav {
+	color: #767676;
+	display: block;
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+.post-navigation a,
+.image-navigation a {
+	color: #2b2b2b;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.7142857142;
+	text-transform: none;
+}
+
+.post-navigation a:hover,
+.image-navigation a:hover {
+	color: $green-reg;
+}
+
+/* Paging Navigation */
+
+.paging-navigation {
+	border-top: 5px solid $blue-dark;
+	margin: 48px 0;
+}
+
+.paging-navigation .loop-pagination {
+	margin-top: -5px;
+	text-align: center;
+}
+
+.paging-navigation .page-numbers {
+	border-top: 5px solid transparent;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 900;
+	margin-right: 1px;
+	padding: 7px 16px;
+	text-transform: uppercase;
+}
+
+.paging-navigation a {
+	color: #2b2b2b;
+}
+
+.paging-navigation .page-numbers.current {
+	border-top: 5px solid $green-dark;
+}
+
+.paging-navigation a:hover {
+	border-top: 5px solid $green-reg;
+	color: #2b2b2b;
+}

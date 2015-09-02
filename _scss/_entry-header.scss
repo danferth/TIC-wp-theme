@@ -1,0 +1,45 @@
+/**
+ * 6.2 Entry Header
+ * -----------------------------------------------------------------------------
+ */
+
+.entry-header {
+	position: relative;
+	z-index: 1;
+}
+
+.entry-title {
+	font-size: 33px;
+	font-weight: 300;
+	line-height: 1.0909090909;
+	margin: 0 0 12px 0;
+	text-transform: uppercase;
+	color:$secondary-color-black;
+}
+.entry-title + p{
+  border-top:1px solid $faint-color-black;
+  padding-top:.5em;
+  margin-top:0;
+}
+
+.entry-title a {
+	color: $secondary-color-black;
+  text-decoration:none;
+  transition:color 350ms, text-shadow 500ms;
+  text-shadow:0 3px 5px transparent;
+}
+
+.entry-title a:hover {
+	color: $body-color-black;
+  text-shadow:0 3px 5px $tertiary-color-black;
+  
+}
+
+.site-content .entry-header {
+	background-color: #fff;
+	padding: 0 10px 12px;
+}
+
+.site-content .has-post-thumbnail .entry-header {
+	padding-top: 24px;
+}

@@ -1,0 +1,45 @@
+/**
+ * 7.0 Sidebars
+ * -----------------------------------------------------------------------------
+ */
+
+/* Secondary */
+
+#secondary {
+	background-color: $nav-bg;
+	border-top: 1px solid $nav-bg;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	clear: both;
+	color: rgba(255, 255, 255, 0.7);
+	margin-top: -1px;
+	padding: 0 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.site-description {
+	display: none;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/* Primary Sidebar */
+
+.primary-sidebar {
+	padding-top: 48px;
+}
+
+.secondary-navigation + .primary-sidebar {
+	padding-top: 0;
+}
+
+/* Content Sidebar */
+
+.content-sidebar {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	color: #767676;
+	padding: 48px 10px 0;
+}

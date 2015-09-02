@@ -1,0 +1,215 @@
+/**
+ * 7.2 Content Sidebar Widgets
+ * -----------------------------------------------------------------------------
+ */
+
+.content-sidebar .widget a {
+	color: $green-dark;
+}
+
+.content-sidebar .widget a:hover {
+	color: $green-reg;
+}
+
+.content-sidebar .widget pre {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-sidebar .widget mark,
+.content-sidebar .widget ins {
+	color: #2b2b2b;
+}
+
+.content-sidebar .widget abbr[title] {
+	border-color: #2b2b2b;
+}
+
+.content-sidebar .widget fieldset {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-sidebar .widget blockquote {
+	color: #767676;
+}
+
+.content-sidebar .widget blockquote cite {
+	color: #2b2b2b;
+}
+
+.content-sidebar .widget li > ol,
+.content-sidebar .widget li > ul {
+	margin-left: 18px;
+}
+
+.content-sidebar .widget table,
+.content-sidebar .widget th,
+.content-sidebar .widget td {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-sidebar .widget del {
+	color: #767676;
+}
+
+.content-sidebar .widget hr {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-sidebar .widget input,
+.content-sidebar .widget textarea {
+	background-color: #fff;
+	border-color: rgba(0, 0, 0, 0.1);
+	color: #2b2b2b;
+}
+
+.content-sidebar .widget input:focus,
+.content-sidebar .widget textarea:focus {
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+.content-sidebar .widget input[type="button"],
+.content-sidebar .widget input[type="reset"],
+.content-sidebar .widget input[type="submit"] {
+	background-color: $green-dark;
+	border: 0;
+	color: #fff;
+}
+
+.content-sidebar .widget input[type="button"]:hover,
+.content-sidebar .widget input[type="button"]:focus,
+.content-sidebar .widget input[type="reset"]:hover,
+.content-sidebar .widget input[type="reset"]:focus,
+.content-sidebar .widget input[type="submit"]:hover,
+.content-sidebar .widget input[type="submit"]:focus {
+	background-color: $green-reg;
+}
+
+.content-sidebar .widget input[type="button"]:active,
+.content-sidebar .widget input[type="reset"]:active,
+.content-sidebar .widget input[type="submit"]:active {
+	background-color: $green-reg;
+}
+
+.content-sidebar .widget .wp-caption {
+	color: #767676;
+}
+
+.content-sidebar .widget .widget-title {
+	border-top: 5px solid $blue-dark;
+	color: #2b2b2b;
+	font-size: 14px;
+	font-weight: 900;
+	margin: 0 0 18px;
+	padding-top: 7px;
+	text-transform: uppercase;
+}
+
+.content-sidebar .widget .widget-title a {
+	color: #2b2b2b;
+}
+
+.content-sidebar .widget .widget-title a:hover {
+	color: $green-reg;
+}
+
+/* List Style Widgets*/
+
+.content-sidebar .widget_archive li,
+.content-sidebar .widget_categories li,
+.content-sidebar .widget_links li,
+.content-sidebar .widget_meta li,
+.content-sidebar .widget_nav_menu li,
+.content-sidebar .widget_pages li,
+.content-sidebar .widget_recent_comments li,
+.content-sidebar .widget_recent_entries li,
+.content-sidebar .widget_categories li ul,
+.content-sidebar .widget_nav_menu li ul,
+.content-sidebar .widget_pages li ul {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Widget */
+
+.content-sidebar .widget_calendar caption {
+	color: #2b2b2b;
+	font-weight: 900;
+}
+
+.content-sidebar .widget_calendar thead th {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+.content-sidebar .widget_calendar tbody a,
+.content-sidebar .widget_calendar tbody a:hover {
+	color: #fff;
+}
+
+/* Ephemera widget*/
+
+.content-sidebar .widget_twentyfourteen_ephemera .widget-title {
+	line-height: 1.2857142857;
+	padding-top: 1px;
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .widget-title:before {
+	background-color: $blue-dark;
+	color: #fff;
+	margin: -1px 9px 0 0;
+	padding: 6px 0 9px;
+	text-align: center;
+	vertical-align: middle;
+	width: 36px;
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .video.widget-title:before {
+	content: "\f104";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .audio.widget-title:before {
+	content: "\f109";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .image.widget-title:before {
+	content: "\f473";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .gallery.widget-title:before {
+	content: "\f103";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .aside.widget-title:before {
+	content: "\f101";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .quote.widget-title:before {
+	content: "\f106";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .link.widget-title:before {
+	content: "\f107";
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera > ol > li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .entry-meta {
+	color: #ccc;
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a {
+	color: #767676;
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover {
+	color: $green-reg;
+}
+
+.content-sidebar.widget_twentyfourteen_ephemera blockquote cite {
+	font-size: 13px;
+	line-height: 1.3846153846;
+}
+
+.content-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link {
+	font-weight: 900;
+}

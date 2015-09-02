@@ -1,0 +1,21 @@
+/**
+ * 6.8 Attachments
+ * -----------------------------------------------------------------------------
+ */
+
+.attachment .content-sidebar,
+.attachment .post-thumbnail {
+	display: none;
+}
+
+.attachment .entry-content {
+	padding-top: 0;
+}
+
+.attachment footer.entry-meta {
+	text-transform: none;
+}
+
+.entry-attachment .attachment {
+	margin-bottom: 24px;
+}
