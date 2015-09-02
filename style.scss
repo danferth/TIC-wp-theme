@@ -58,6 +58,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *
  * -----------------------------------------------------------------------------
  */
+ //=====================CLASSES=====================
+.title-color-black      { color: black};
+.body-color-black       { color: rgba(black,.87)};
+.secondary-color-black  { color: rgba(black, .54)};
+.tertiary-color-black   { color: rgba(black, .38)};
+.faint-color-black      { color: rgba(black, .18)};
+//--------------------------------------------------
+.title-color-white      { color: white};
+.body-color-white       { color: rgba(white,1)};
+.secondary-color-white  { color: rgba(white, .7)};
+.tertiary-color-white   { color: rgba(white, .3)};
+.faint-color-white      { color: rgba(white, .18)};
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
@@ -102,7 +114,7 @@ button,
 input,
 select,
 textarea {
-	color: $grey-reg;
+	color: $body-color-black;
 	font-family: $font-body;
 	font-size: 14px;
 	font-weight: 400;
@@ -114,7 +126,7 @@ body {
 }
 
 a {
-	color: $orange-reg;
+	color: $green-dark;
 	text-decoration: none;
 }
 
@@ -129,7 +141,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: $orange-reg;
+	color: darken($green-dark,10%);
 }
 
 h1,
@@ -138,40 +150,35 @@ h3,
 h4,
 h5,
 h6 {
-	color:$grey-dark;
+	color:$title-color-black;
 	clear: both;
 	font-weight: 700;
 	font-family: $font-title;
 	margin: 31px 0 10px; 
 }
-
 h1 {
 	font-size: 24px;
 	line-height: 1.3846153846;
 }
-
 h2 {
 	font-size: 22px;
 	line-height: 1;
 }
-
 h3 {
 	font-size: 20px;
 	line-height: 1.0909090909;
 }
-
 h4 {
 	font-size: 18px;
 	line-height: 1.2;
 }
-
 h5 {
 	font-size: 16px;
 	line-height: 1.3333333333;
 }
-
 h6 {
 	font-size: 14px;
+  font-weight:300;
 	line-height: 1.5;
 }
 
@@ -194,7 +201,8 @@ cite,
 dfn,
 em,
 i {
-	font-style: italic;
+	font-weight:300;
+  color:$secondary-color-black;
 }
 
 mark,
@@ -204,6 +212,9 @@ ins {
 }
 
 p {
+	font:400 1em/1.5 $font-body;
+  color:$body-color-black;
+  text-shadow:0 1px 0 $faint-color-black;
 	margin-bottom: 21px;
 }
 
@@ -236,30 +247,50 @@ q {
 	hyphens: none;
 	quotes: none;
 }
-
 blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
+blockquote:after{
+  position:absolute;
+  color:$faint-color-black;
+  font-size:4em;
+}
+blockquote:before{
+	content: '\201C';
+  left:-.1em;
+  top:-.20em;
+}
+
+blockquote:after{
+	content: '\201D';
+  right:.2em;
+  bottom:-.7em;
 }
 
 blockquote {
-	color: #767676;
-	font-size: 19px;
+	color: $secondary-color-black;
+  box-shadow:0 10px 200px $faint-color-black;
+	font-size: 1em;
 	font-style: italic;
 	font-weight: 300;
-	line-height: 1.2631578947;
+	line-height: 1.3;
+  position:relative;
 	margin-bottom: 24px;
-}
-
-blockquote cite,
-blockquote small {
-	color: #2b2b2b;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.5;
+  padding: .25em 1.75em;
+  border:1px solid $faint-color-black;
+  border-left:none;
+  border-right:none;
+  footer{
+    margin-top:.5em;
+    font-size:.8em;
+    color:$secondary-color-black;
+    font-style:normal;
+    font-weight:700;
+    cite{
+      font-size:1em;
+      display:block;
+      color:$secondary-color-black;
+      font-weight: 400;
+    }
+  }
 }
 
 blockquote em,
@@ -313,20 +344,34 @@ dd {
 ul,
 ol {
 	list-style: none;
-	margin: 0 0 24px 20px;
+	margin: 0 0 24px 0;
+  li{
+    color:$secondary-color-black;
+    margin-bottom:.75em;
+    &:last-of-type{
+      margin-bottom:0;
+    }
+  }
+  @media(max-width:700px){
+    padding-right:0;
+  }
 }
-
-ul {
-	list-style: disc;
+ul{
+  list-style:disc;
+  ul{
+    list-style:circle;
+  }
 }
-
-ol {
-	list-style: decimal;
+ol{
+  list-style:decimal;
+  ol{
+    list-style:lower-roman;
+  }
 }
 
 li > ul,
 li > ol {
-	margin: 0 0 0 20px;
+	margin: 12px 0;
 }
 
 img {
@@ -441,25 +486,30 @@ del {
 	color: #767676;
 }
 
-hr {
-	background-color: rgba(0, 0, 0, 0.1);
-	border: 0;
-	height: 1px;
-	margin-bottom: 23px;
+hr{
+  height:2px;
+  border:none;
+  margin: 1em 0;
+  border-top:1px solid $blue-light;
+  background:linear-gradient(to right,
+    rgba($blue-reg, 0)  0%,
+    rgba($blue-reg, 1) 45%,
+    rgba($blue-reg, 1) 55%,
+    rgba($blue-reg, 0)100%);
 }
 
 /* Support a widely-adopted but non-standard selector for text selection styles
  * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: $green-med;
-	color: $grey-dark;
+	background: $green-light;
+	color: $blue-dark;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: $green-med;
-	color: $grey-dark;
+	background: $green-light;
+	color: $blue-dark;
 	text-shadow: none;
 }
 
@@ -496,7 +546,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: $green-dark;
+	background-color: $green-reg;
 	border: 0;
 	border-radius: 2px;
 	color: #fff;
@@ -526,7 +576,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	background-color: $green-med;
+	background-color: $green-reg;
 }
 
 .search-field {
@@ -875,7 +925,7 @@ span + .edit-link:before,
 /* Search in the header */
 
 .search-toggle {
-	background-color: $green-black;
+	background-color: $green-reg;
 	cursor: pointer;
 	float: right;
 	height: 48px;
@@ -932,10 +982,12 @@ span + .edit-link:before,
 .site-navigation ul {
 	list-style: none;
 	margin: 0;
+	padding:0;
 }
 
 .site-navigation li {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	margin:0;
 }
 
 .site-navigation ul ul {
@@ -949,7 +1001,7 @@ span + .edit-link:before,
 }
 
 .site-navigation a:hover {
-	color: $green-black;
+	color: $green-dark;
 }
 
 .site-navigation .current_page_item > a,
@@ -1094,18 +1146,27 @@ a.post-thumbnail:hover {
 	font-size: 33px;
 	font-weight: 300;
 	line-height: 1.0909090909;
-	margin-bottom: 12px;
 	margin: 0 0 12px 0;
 	text-transform: uppercase;
-	color:$grey-reg;
+	color:$secondary-color-black;
+}
+.entry-title + p{
+  border-top:1px solid $faint-color-black;
+  padding-top:.5em;
+  margin-top:0;
 }
 
 .entry-title a {
-	color: $grey-reg;
+	color: $secondary-color-black;
+  text-decoration:none;
+  transition:color 350ms, text-shadow 500ms;
+  text-shadow:0 3px 5px transparent;
 }
 
 .entry-title a:hover {
-	color: $grey-med;
+	color: $body-color-black;
+  text-shadow:0 3px 5px $tertiary-color-black;
+  
 }
 
 .site-content .entry-header {
@@ -1274,19 +1335,19 @@ a.post-thumbnail:hover {
 .page-content a,
 .comment-content a {
 	text-decoration: none;
-	border-bottom:1px dashed $orange-reg;
+	border-bottom:1px dashed $green-reg;
 	background:transparent;
 	transition:all 250ms;
 	padding:0 .15em;
 	display:inline-block;
 	position:relative;
-	z-index:1000;
+	z-index:1;
 	&:before{
 		content:"";
 		width:100%;
 		height:0%;
 		z-index:-1;
-		background:rgba($orange-light,.4);
+		background:rgba($green-light,.4);
 		bottom:0;
 		left:0;
 		position:absolute;
@@ -1304,7 +1365,7 @@ a.post-thumbnail:hover {
 .comment-content a.button {
 	text-decoration: none;
 	border-color:transparent;
-	color:$orange-dark;
+	color:$green-dark;
 	&:before{
 		height:100%;
 	}
@@ -1356,7 +1417,7 @@ a.post-thumbnail:hover {
 .hentry .mejs-container {
 	margin: 12px 0 18px;
 }
-
+ 
 .hentry .mejs-mediaelement,
 .hentry .mejs-container .mejs-controls {
 	background: $blue-dark;
@@ -1379,7 +1440,7 @@ a.post-thumbnail:hover {
 .hentry .mejs-container .mejs-controls .mejs-time {
 	padding-top: 9px;
 }
-
+ 
 .hentry .mejs-controls .mejs-time-rail span,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
@@ -2368,7 +2429,7 @@ a.post-thumbnail:hover {
 .widget input[type="button"]:active,
 .widget input[type="reset"]:active,
 .widget input[type="submit"]:active {
-	background-color: $green-med;
+	background-color: $green-reg;
 }
 
 .widget .wp-caption {
@@ -2670,7 +2731,7 @@ a.post-thumbnail:hover {
 .content-sidebar .widget input[type="button"]:active,
 .content-sidebar .widget input[type="reset"]:active,
 .content-sidebar .widget input[type="submit"]:active {
-	background-color: $green-med;
+	background-color: $green-reg;
 }
 
 .content-sidebar .widget .wp-caption {
@@ -2814,7 +2875,7 @@ a.post-thumbnail:hover {
 }
 
 .site-footer {
-	background-color: $blue-black;
+	background-color: $blue-dark;
 	font-size: 12px;
 	position: relative;
 	z-index: 3;
@@ -4344,13 +4405,13 @@ a.post-thumbnail:hover {
   border: none;
 }
 .entry-content table th {
-  border-top: 1px solid $grey-light;
+  border-top: 1px solid $tertiary-color-black;
   border-bottom: 2px solid $blue-reg;
   vertical-align: bottom;
 }
 .entry-content table th, .entry-content table td {
-  border-left: 1px solid $grey-light;
-  border-right: 1px solid $grey-light;
+  border-left: 1px solid $tertiary-color-black;
+  border-right: 1px solid $tertiary-color-black;
 }
 .entry-content table th:nth-child(1), .entry-content table td:nth-child(1) {
   border-left: none;
@@ -4359,7 +4420,7 @@ a.post-thumbnail:hover {
   border-right: none;
 }
 .entry-content table tbody tr:nth-child(even) {
-  background: $blue-faint;
+  background: $green-light;
 }
 
 /*-===================general blocks and such==========*/
@@ -4385,9 +4446,8 @@ a.post-thumbnail:hover {
   display: table;
   clear: both;
 }
-
 .product_block {
-  background: $grey-faint;
+  background: lighten($faint-color-black,50%);
   padding-left: .5em;
   margin-bottom: .5em;
 }
@@ -4396,16 +4456,21 @@ a.post-thumbnail:hover {
   display: table;
   clear: both;
 }
+.product_block a{
+	float:left;
+}
 .product_block ul {
   margin: 0;
+  padding: .5em 0 0 0;
 }
 .product_block ul li {
   list-style: none;
+  margin:0;
 }
 
 .product_block li.des_1 {
   font-weight: bold;
-  font-size: .87em;
+  font-size: 1em;
 }
 
 .product_block li.des_2 {
@@ -4415,7 +4480,7 @@ a.post-thumbnail:hover {
 
 .product_block li.part_num {
   font-size: .8em;
-  color: $grey-reg;
+  color: $secondary-color-black;
 }
 
 /*===============category page================== */
@@ -4426,7 +4491,7 @@ a.post-thumbnail:hover {
 }
 
 .cat_block {
-  background: $grey-faint;
+  background: lighten($faint-color-black,50%);
   padding: .1em .5em;
   transition: background 300ms;
   cursor: pointer;
@@ -4438,19 +4503,22 @@ a.post-thumbnail:hover {
   clear: both;
 }
 .cat_block:hover {
-  background: darken($grey-faint,10%);
+  background: $faint-color-black;
 }
 .cat_block ul {
   margin: 0;
+  padding:.5em 0 0 0;
 }
 .cat_block ul li {
   list-style: none;
+  margin:0;
 }
 
 .cat_link a {
   font-weight: bold;
   text-decoration: none;
-  font-size: .89em;
+  font-size: 1em;
+  color:$title-color-black;
 }
 
 .cat_link a span {
@@ -4459,8 +4527,8 @@ a.post-thumbnail:hover {
 
 .cat_des {
   font-style: italic;
-  color: $grey-reg;
-  font-size: .75em;
+  color: $body-color-black;
+  font-size: .85em;
 }
 /*=========tech library page===========*/
 .site-tl-main{
@@ -4479,14 +4547,13 @@ a.post-thumbnail:hover {
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  justify-content:flex-start;
+  justify-content:flex-start; 
   align-items:stretch;
   align-content:stretch;
 }
 .card{
-  background:lighten($blue-faint, 2%);
-  box-shadow:0 3px 6px $grey-med;
-  width:325px;
+  background:lighten($blue-light, 2%);
+  box-shadow:0 3px 6px $secondary-color-black;
   height:275px;
   position:relative;
   margin:1em;
@@ -4512,7 +4579,7 @@ a.post-thumbnail:hover {
   }
   &:hover{
     box-shadow:none;
-    background:darken($blue-faint,2%);
+    background:darken($blue-light,2%);
     &:before{
       top:150px;
       left:0px;
@@ -4522,8 +4589,8 @@ a.post-thumbnail:hover {
 } //end card
 .tl_card_h1{
     color:white;
-    text-shadow:0 1px 0 $blue-black;
-    background:$blue-dark;
+    text-shadow:0 1px 0 $blue-dark;
+    background:$blue-reg;
     margin:0;
     padding:.25em .5em;
     height:1.75em;
@@ -4543,19 +4610,19 @@ a.post-thumbnail:hover {
 .tl_card_footer{
     clear:both;
     text-align:center;
-    background:lighten($blue-faint,2%);
+    background:lighten($blue-light,2%);
     transition:background 250ms, bottom 500ms;
     position:absolute;
     bottom:-1.6em;
     left:0;
     width:100%;
     &:hover{
-      background:darken($blue-faint,5%);
+      background:darken($blue-light,5%);
     }
     a{
-      color:darken($grey-light, 10%);
+      color:darken($faint-color-black, 10%);
       font:400 .8em $font-body;
-      text-shadow:0 1px 0 lighten($grey-light,23%);
+      text-shadow:0 1px 0 lighten($faint-color-black,23%);
       text-decoration:none;
       display:inline-block;
       width:100%;
@@ -4563,8 +4630,8 @@ a.post-thumbnail:hover {
       padding:.5em;
       transition:all 250ms;
       &:hover{
-        color:darken($grey-light, 17%);
-        text-shadow:0 1px 0 lighten($grey-light,13%);
+        color:darken($faint-color-black, 17%);
+        text-shadow:0 1px 0 lighten($faint-color-black,13%);
       }
     }
   }
@@ -4591,7 +4658,7 @@ ul.tl_list{
 .show_footer{bottom:0;}
 .fade_img{opacity:1;}
 .bigger{flex-grow:1;}
-.darker_h1{background:$blue-black;}
+.darker_h1{background:$blue-dark;}
 
 
 

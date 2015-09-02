@@ -1,46 +1,3 @@
- //colors
-$grey-black:	 hsl(0, 0%, 0%);
-$grey-dark:		 hsl(207, 8%, 23%);
-$grey-reg:		 hsl(212, 7.9%, 37.1%);
-$grey-med:		 hsl(210, 4%, 58%);
-$grey-light:	 hsl(210, 4%, 79%);
-$grey-faint:	 hsl(0, 0%, 95%);
-
-$blue-black:	 hsl(202, 100%, 16%);
-$blue-dark:		 hsl(201.4, 100%, 22.5%);
-$blue-reg:		 hsl(201.2, 93.5%, 36.3%);
-$blue-med:		 hsl(207.8, 42.9%, 75.3%);
-$blue-light:	 hsl(202.2, 50.9%, 89.6%);
-$blue-faint:	 hsl(216, 24%, 96%);
-
-$green-black:	 hsl(80, 58%, 20%);
-$green-dark:	 hsl(78.4, 58.6%, 28.4%);
-$green-reg:		 hsl(78.2, 54.7%, 48.4%);
-$green-med:		 hsl(78.7, 66.8%, 63.3%);
-$green-light:	 hsl(78.9, 69%, 74.7%);
-$green-faint:	 hsl(60, 100%, 90%);
-
-$brown-black:	 hsl(41, 75%, 13%);
-$brown-dark:	 hsl(41.4, 74%, 19.6%);
-$brown-reg:		 hsl(41.5, 100%, 25.5%);
-$brown-med:		 hsl(41.4, 51.6%, 42.9%);
-$brown-light:	 hsl(41.9, 58.6%, 61.2%);
-$brown-faint:	 hsl(40, 43%, 95%);
-
-$orange-black: hsl(33, 100%, 19%);
-$orange-dark:	 hsl(33, 100%, 33.5%);
-$orange-reg:	 hsl(32.7, 100%, 44.3%);
-$orange-med:	 hsl(32.7, 80.7%, 59.4%);
-$orange-light: hsl(32.8, 80.3%, 74.1%);
-$orange-faint: hsl(30, 67%, 94%);
-
-$red-black:		 hsl(0, 95%, 15%);
-$red-dark:		 hsl(0, 94.55%, 21.57%);
-$red-reg:		 	 hsl(0, 94.44%, 35.29%);
-$red-med:		 	 hsl(0, 93.94%, 45.29%);
-$red-light:		 hsl(0, 86.09%, 77.45%);
-$red-faint:		 hsl(0, 50%, 93.73%);
-
 //========================================
 //=============Variables==================
 //========================================
@@ -72,11 +29,11 @@ $font-title: 	"Oswald", sans-serif;
 //===========================================
 
 //layout variables
-$nav-bg:						$blue-black;
-$nav-hover:					$green-black;
-$nav-second-bg: 		$green-black;
-$nav-second-hover:  $green-dark;
-$nav-side-bg:				$blue-black;
-$nav-side-hover:		$green-black;
-$nav-link-current:	$green-med;
-$side-bg:						$blue-black;
+$nav-bg:						$blue-dark;
+$nav-hover:					$green-dark;
+$nav-second-bg: 		$green-dark;
+$nav-second-hover:  $green-reg;
+$nav-side-bg:				$blue-dark;
+$nav-side-hover:		$green-dark;
+$nav-link-current:	$green-light;
+$side-bg:						$blue-dark;
