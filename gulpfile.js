@@ -15,7 +15,7 @@ gulp.task('default',['watch']);
 gulp.task('build-css',function(){
     var processors = [autoprefixer({browsers:['last 2 version']}),csswring];
     var build_processors = [csswring];
-    return gulp.src('style.scss')
+    return gulp.src('_scss\\style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss(processors))
@@ -26,5 +26,5 @@ gulp.task('build-css',function(){
 
 //watch
 gulp.task('watch',function(){
-    gulp.watch('*.scss', ['build-css']);
+    gulp.watch('_scss/**/*.scss', ['build-css']);
 });
