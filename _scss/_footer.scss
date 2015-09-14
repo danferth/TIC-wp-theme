@@ -38,11 +38,12 @@
 .site-info p{
     margin:0;
     font-size:.9em;
+    color:rgba(255, 255, 255, .9);
 }
 .site-info img{
   float:left;
   margin-right:1em;
-  opacity:.65;
+  opacity:.5;
 }
 .site-info:after{
   content:"";
