@@ -3,22 +3,22 @@ jQuery(function($){
 //==============================
 //Product page form TC Inversion
 //==============================
-jQuery('.tc_page-form option').attr('disabled', 'disabled');
-jQuery('.tc_page-form input[type="radio"]').on('click', function(e) {
-		var output = jQuery('.tc_page-form input.radio:checked').attr('id');
+$('.tc_page-form option').attr('disabled', 'disabled');
+$('.tc_page-form input[type="radio"]').on('click', function(e) {
+		var output = $('.tc_page-form input.radio:checked').attr('id');
 		if (output == "flask-5") {
-				jQuery('.tc_page-form option').removeAttr('disabled');
+				$('.tc_page-form option').removeAttr('disabled');
 		}
 		if (output == "flask-16") {
-				jQuery('.tc_page-form option').removeAttr('disabled');
-				jQuery('.tc_page-form option[value="qc14"]').attr('disabled', 'disabled');
+				$('.tc_page-form option').removeAttr('disabled');
+				$('.tc_page-form option[value="qc14"]').attr('disabled', 'disabled');
 		}
 });
 
-jQuery('.tc_page-form select#options').on('change', function(e) {
-		var size = jQuery('.tc_page-form input[type="radio"]:checked').attr('id');
-		var conn = jQuery('.tc_page-form option:selected').attr('value');
-		var connText = jQuery('.tc_page-form option:selected').text();
+$('.tc_page-form select#options').on('change', function(e) {
+		var size = $('.tc_page-form input[type="radio"]:checked').attr('id');
+		var conn = $('.tc_page-form option:selected').attr('value');
+		var connText = $('.tc_page-form option:selected').text();
 		var part_no = "";
 		var tc_desc = "";
 		var stand_part_no = "";
@@ -79,13 +79,63 @@ jQuery('.tc_page-form select#options').on('change', function(e) {
 						break;
 		}
 
-		jQuery('.tc_page-form p.tc_part span.partNo').html(part_no);
-		jQuery('.tc_page-form p.tc_part span.tc_desc').html(tc_desc);
-		jQuery('.tc_page-form p.stand span.stand_part').html(stand_part_no);
-		jQuery('.tc_page-form p.stand span.stand_description').html(stand_desc);
-		jQuery('.tc_page-form .output').slideDown(350);
+		$('.tc_page-form p.tc_part span.partNo').html(part_no);
+		$('.tc_page-form p.tc_part span.tc_desc').html(tc_desc);
+		$('.tc_page-form p.stand span.stand_part').html(stand_part_no);
+		$('.tc_page-form p.stand span.stand_description').html(stand_desc);
+		$('.tc_page-form .output').slideDown(350);
 
 		e.preventDefault();
 }); //END .on(change);
+
+//video carousel
+//elm variables
+var slide = $('.slide');
+var left_btn = $('.shift_left');
+var right_btn = $('.shift_right');
+var slides = $('.slide_wrap');
+//===width & height variables===
+
+//for .slides shift
+var carousel_width    = $('.carousel').outerWidth(),
+    slide_wrap_width         = $('.slide_wrap').outerWidth(),
+    width_diff      =  carousel_width - slide_wrap_width;
+
+
+//buttons
+right_btn.on('click', function(){
+  TweenLite.to(slides, .5, {left:width_diff});
+});
+left_btn.on('click', function(){
+  TweenLite.to(slides, .5, {left:0});
+});
+
+//mouse over to show buttons
+$('.carousel_wrap').on('mouseover',function(){
+  var slide_pos = $('.slide_wrap').css("left");
+  if(width_diff < 0){
+    if(slide_pos == "0px"){
+      right_btn.addClass('op_1');
+    }else if(slide_pos !== "0px"){
+      left_btn.addClass('op_1');
+    }
+  }
+});
+$('.carousel_wrap').on('mouseout',function(){
+  left_btn.removeClass('op_1');
+  right_btn.removeClass('op_1');
+});
+
+//hover on slide
+$('.slide').on('mouseover',function(){
+  TweenLite.to(this, .18, {
+    scale:.95,
+    borderRadius:5});
+});
+$('.slide').on('mouseout',function(){
+  TweenLite.to(this, .12, {
+    scale:1,
+    borderRadius:0});
+});
 
 });

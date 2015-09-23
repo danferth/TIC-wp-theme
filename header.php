@@ -29,6 +29,7 @@
 	<![endif]-->
   <?php
     wp_head();
+    wp_enqueue_script('TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js');
     wp_enqueue_script('tic.js', get_template_directory_uri() . '/js/tic.js');
   ?>
 </head>

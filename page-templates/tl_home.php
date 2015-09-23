@@ -22,6 +22,74 @@ get_header(); ?>
 		<div id="content" class="site-tl-main" role="main">
       
       <h1 class="entry-title">Technical Library</h1>
+        <div class="carousel_wrap clear">
+    <button class="shift_left">&lt;</button>
+    <div class="carousel">
+      <div class="slide_wrap" data-slides="6">
+        <div class="slide" data-slide="1">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+        <div class="slide" data-slide="2">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+        <div class="slide" data-slide="3">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+        <div class="slide" data-slide="4">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+        <div class="slide" data-slide="5">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+        <div class="slide" data-slide="6">
+          <div class="img_wrap">
+            <div class="img_wrap_inner">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/698/v_Thum_6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slide_footer">
+            <a href="">Link title</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="shift_right">&gt;</button>
+  </div>
 			
       <div class="wrap">
         

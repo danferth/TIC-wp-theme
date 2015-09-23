@@ -270,3 +270,125 @@ ul.tl_list{
 .fade_img{opacity:1;}
 .bigger{flex-grow:1;}
 .darker_h1{background:$blue-dark;}
+
+
+//===========video link carousel==============
+//main wrapper
+.carousel_wrap{
+  width:100%;
+  height:200px;
+  margin:30px 0;
+}
+//buttons
+.shift_left, .shift_right{
+    float:left;
+    height:100%;
+    outline:none;
+    border:none;
+    width:50px;
+    font:900 2em monospaced;
+    background-color:white;
+    transition:color 200ms, opacity 500ms;
+    color:$blue-reg;
+    padding:0;
+    cursor:pointer;
+    opacity: 0;
+    &:hover{
+      color:$blue-light;
+      background-color:white;
+    }
+    @media screen and (max-width:600px){
+      display:none;
+    }
+  }
+//carousel
+.carousel{
+  width:calc(100% - 100px);
+  height:100%;
+  float:left;
+  position:relative;
+  overflow:hidden;
+  @media screen and (max-width:600px){
+    width:100%;
+    overflow-x:auto;
+  }
+}
+//slide_wrapper
+.slide_wrap{
+  min-width:938px;
+  max-width:calc(155px * 6)-5px;
+  height:100%;
+  position:absolute;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  top:0;
+  left:0;
+}
+//slides
+.slide{
+    width:150px;
+    height:100%;
+    margin:0 5px 0 0;
+    overflow:hidden;
+    cursor:pointer;
+    transition:box-shadow 250ms;
+    box-shadow:0 0px 0px rgba(0,0,0,.87);
+    &:last-of-type{
+      margin_right:0;
+    }
+  &:hover{
+    box-shadow:0 2px 4px rgba(0,0,0,.87);
+  }
+    .img_wrap{
+      position:relative;
+      width:100%;
+      height:75%;
+      padding-top:100%;
+      box-sizing:border-box;
+      .img_wrap_inner{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:$blue-light;
+        padding:25% 3% 0 3%;
+        box-sizing:border-box;
+        top:0;
+        img{
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+    .slide_footer{
+      height:25%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:darken(white, 5%);
+      a{
+        padding:0;
+        margin:0;
+        text-align:center;
+        text-decoration:none;
+        font:400 1em/1.5em "Source Sans Pro", Sans-serif;
+        color:darken(white, 40%);
+      }
+    }
+  }
+
+.outline{
+  outline:1px solid red;
+  outline-offset:-2px;
+}
+
+.clear{
+  &:after{
+   content:"";
+    display:table;
+    clear:both;
+  }
+}
+.op_1{
+  opacity:1;
+}
