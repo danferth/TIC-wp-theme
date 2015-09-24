@@ -272,7 +272,10 @@ ul.tl_list{
 .darker_h1{background:$blue-dark;}
 
 
+//============================================
 //===========video link carousel==============
+//============================================
+
 //main wrapper
 .carousel_wrap{
   width:100%;
@@ -289,16 +292,22 @@ ul.tl_list{
     font:900 2em monospaced;
     background-color:white;
     transition:color 200ms, opacity 500ms;
-    color:$blue-reg;
+    color:$blue-light;
     padding:0;
     cursor:pointer;
     opacity: 0;
-    &:hover{
-      color:$blue-light;
+    &:hover, &:focus{
+      color:$blue-dark;
+      background-color:white;
+    }
+    &:active, &:visited{
       background-color:white;
     }
     @media screen and (max-width:600px){
       display:none;
+    }
+    @media screen and (max-width:800px){
+      opacity:.5;
     }
   }
 //carousel

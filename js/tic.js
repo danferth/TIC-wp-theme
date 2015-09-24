@@ -93,16 +93,16 @@ $('.tc_page-form select#options').on('change', function(e) {
 //video carousel
 //==================
 //elm variables
-var slide = $('.slide');
-var left_btn = $('.shift_left');
+var slide 		= $('.slide');
+var left_btn 	= $('.shift_left');
 var right_btn = $('.shift_right');
-var slides = $('.slide_wrap');
+var slides 		= $('.slide_wrap');
 //===width & height variables===
 
 //for .slides shift
 var carousel_width    = $('.carousel').outerWidth(),
-    slide_wrap_width         = $('.slide_wrap').outerWidth(),
-    width_diff      =  carousel_width - slide_wrap_width;
+    slide_wrap_width  = $('.slide_wrap').outerWidth(),
+    width_diff      	=  carousel_width - slide_wrap_width;
 
 
 //buttons
