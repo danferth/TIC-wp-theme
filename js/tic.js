@@ -88,7 +88,10 @@ $('.tc_page-form select#options').on('change', function(e) {
 		e.preventDefault();
 }); //END .on(change);
 
+
+//==================
 //video carousel
+//==================
 //elm variables
 var slide = $('.slide');
 var left_btn = $('.shift_left');
@@ -138,4 +141,12 @@ $('.slide').on('mouseout',function(){
     borderRadius:0});
 });
 
-});
+TweenMax.staggerFrom(".slide",.75, {
+  opacity:0,
+  scale:.5,
+  delay:.35,
+  ease:Bounce.easeOut
+}, .1);
+
+
+});//end doc ready
