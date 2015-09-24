@@ -54,22 +54,26 @@
 /* Search in the header */
 
 .search-toggle {
-	background-color: $green-reg;
+	background-color: $blue-reg;
 	cursor: pointer;
 	float: right;
 	height: 48px;
 	margin-right: 38px;
 	text-align: center;
 	width: 48px;
+	transition:all 250ms;
 }
 
 .search-toggle:hover,
 .search-toggle.active {
-	background-color: $green-dark;
+	background-color: $blue-dark;
+	&:before{
+		color: $green-light;
+	}
 }
 
 .search-toggle:before {
-	color: #fff;
+	color: $green-reg;
 	content: "\f400";
 	font-size: 20px;
 	margin-top: 14px;
