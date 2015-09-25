@@ -133,7 +133,7 @@
  
 .hentry .mejs-mediaelement,
 .hentry .mejs-container .mejs-controls {
-	background: $blue-dark;
+	background: $primary-dark;
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-loaded,
@@ -169,7 +169,7 @@
 	background-image: none;
 	border-radius: 2px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.8);
-	color: $blue-dark;
+	color: $primary-dark;
 	height: 36px;
 	margin-left: -24px;
 	width: 48px;
@@ -238,7 +238,7 @@
 }
 
 .content-sidebar .wp-playlist-item .wp-playlist-caption {
-	color: $blue-dark;
+	color: $primary-dark;
 }
 
 /* Page links */
@@ -264,8 +264,8 @@
 }
 
 .page-links a {
-	background: $blue-dark;
-	border: 1px solid $blue-dark;
+	background: $primary-dark;
+	border: 1px solid $primary-dark;
 	color: #fff;
 	text-decoration: none;
 }

@@ -19,7 +19,7 @@
 }
 .entry-content table th {
   border-top: 1px solid $tertiary-color-black;
-  border-bottom: 2px solid $blue-reg;
+  border-bottom: 2px solid $primary-reg;
   vertical-align: bottom;
 }
 .entry-content table th, .entry-content table td {
@@ -60,7 +60,7 @@
   clear: both;
 }
 .product_block {
-  background: lighten($blue-light,3%);
+  background: lighten($primary-light,3%);
   padding-left: .5em;
   margin-bottom: .5em;
 }
@@ -104,7 +104,7 @@
 }
 
 .cat_block {
-  background: $blue-light;
+  background: $primary-light;
   padding: .1em .5em;
   transition: background 300ms;
   cursor: pointer;
@@ -116,7 +116,7 @@
   clear: both;
 }
 .cat_block:hover {
-  background: lighten($blue-light,3%);
+  background: lighten($primary-light,3%);
 }
 .cat_block ul {
   margin: 0;
@@ -192,7 +192,7 @@
   }
   &:hover{
     box-shadow:0 3px 6px $body-color-black;
-    background:$blue-light;
+    background:$primary-light;
     &:before{
       top:150px;
       left:0px;
@@ -202,8 +202,8 @@
 } //end card
 .tl_card_h1{
     color:white;
-    text-shadow:0 1px 0 $blue-dark;
-    background:$blue-reg;
+    text-shadow:0 1px 0 $primary-dark;
+    background:$primary-reg;
     margin:0;
     padding:.25em .5em;
     height:1.75em;
@@ -255,12 +255,12 @@ ul.tl_list{
       list-style:none;
       margin-bottom:.30em;
       a{
-        color:$blue-dark;
+        color:$primary-dark;
         text-decoration:none;
-        border-bottom:1px dashed rgba($blue-dark,0);
+        border-bottom:1px dashed rgba($primary-dark,0);
         font:400 .85em $font-body;
         &:hover{
-          border-bottom:1px dashed $blue-dark;
+          border-bottom:1px dashed $primary-dark;
         }
       }
     }
@@ -269,7 +269,7 @@ ul.tl_list{
 .show_footer{bottom:0;}
 .fade_img{opacity:1;}
 .bigger{flex-grow:1;}
-.darker_h1{background:$blue-dark;}
+.darker_h1{background:$primary-dark;}
 
 
 //============================================
@@ -292,12 +292,12 @@ ul.tl_list{
     font:900 2em monospaced;
     background-color:white;
     transition:color 200ms, opacity 500ms;
-    color:$blue-light;
+    color:$primary-light;
     padding:0;
     cursor:pointer;
     opacity: 0;
     &:hover, &:focus{
-      color:$blue-dark;
+      color:$primary-dark;
       background-color:white;
     }
     &:active, &:visited{
@@ -359,7 +359,7 @@ ul.tl_list{
         position:absolute;
         width:100%;
         height:100%;
-        background:$blue-light;
+        background:$primary-light;
         padding:25% 3% 0 3%;
         box-sizing:border-box;
         top:0;

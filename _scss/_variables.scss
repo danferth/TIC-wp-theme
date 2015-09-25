@@ -3,9 +3,9 @@
 //========================================
 
 //COLORS==================================
-$blue-light:	 hsl(202.2, 50.9%, 89.6%);
-$blue-reg:		 hsl(201.2, 93.5%, 36.3%);
-$blue-dark:		 hsl(201.4, 100%, 22.5%);
+$primary-light:	 hsl(202.2, 50.9%, 89.6%);
+$primary-reg:		 hsl(201.2, 93.5%, 36.3%);
+$primary-dark:		 hsl(201.4, 100%, 22.5%);
 //accent----------------------------------
 $accent-light:	 hsl(32.7, 80.7%, 59.4%);
 $accent-reg:	   hsl(32.7, 100%, 44.3%);
@@ -28,12 +28,12 @@ $font-body: 	"Source Sans Pro", sans-serif;
 $font-title: 	"Oswald", sans-serif;
 //===========================================
 //layout variables
-$nav-bg:						$blue-reg;
-$nav-hover:					$blue-dark;
-$nav-second-bg: 		$blue-light;
-$nav-second-text:   $blue-dark;
-$nav-second-hover:  $blue-dark;
-$nav-side-bg:				$blue-reg;
-$nav-side-hover:		$blue-dark;
+$nav-bg:						$primary-reg;
+$nav-hover:					$primary-dark;
+$nav-second-bg: 		$primary-light;
+$nav-second-text:   $primary-dark;
+$nav-second-hover:  $primary-dark;
+$nav-side-bg:				$primary-reg;
+$nav-side-hover:		$primary-dark;
 $nav-link-current:	$accent-light;
-$side-bg:						$blue-reg;
+$side-bg:						$primary-reg;
