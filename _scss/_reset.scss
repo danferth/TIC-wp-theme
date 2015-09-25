@@ -69,7 +69,7 @@ body {
 }
 
 a {
-	color: $green-dark;
+	color: $accent-reg;
 	text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: darken($green-dark,10%);
+	color: darken($accent-dark,10%);
 }
 
 h1,
@@ -93,7 +93,7 @@ h3,
 h4,
 h5,
 h6 {
-	color:$title-color-black;
+	color:$accent-reg;
 	clear: both;
 	font-weight: 700;
 	font-family: $font-title;
@@ -157,8 +157,8 @@ ins {
 
 p {
 	font:400 1em/1.5 $font-body;
-  color:$body-color-black;
-  text-shadow:0 1px 0 lighten($faint-color-black,20%);
+  color:$secondary-color-black;
+  //text-shadow:0 1px 0 lighten($faint-color-black,40%);
 	margin-bottom: 21px;
 }
 
@@ -290,7 +290,7 @@ ol {
 	list-style: none;
 	margin: 0 0 24px 0;
   li{
-    color:$secondary-color-black;
+    color:$body-color-black;
     margin-bottom:.75em;
     &:last-of-type{
       margin-bottom:0;
@@ -445,13 +445,13 @@ hr{
  * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: $green-light;
+	background: $accent-light;
 	color: $blue-dark;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: $green-light;
+	background: $accent-light;
 	color: $blue-dark;
 	text-shadow: none;
 }

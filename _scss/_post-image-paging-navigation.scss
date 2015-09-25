@@ -45,7 +45,7 @@
 
 .post-navigation a:hover,
 .image-navigation a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 /* Paging Navigation */
@@ -75,10 +75,10 @@
 }
 
 .paging-navigation .page-numbers.current {
-	border-top: 5px solid $green-dark;
+	border-top: 5px solid $accent-dark;
 }
 
 .paging-navigation a:hover {
-	border-top: 5px solid $green-reg;
+	border-top: 5px solid $accent-reg;
 	color: #2b2b2b;
 }

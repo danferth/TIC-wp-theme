@@ -8,7 +8,7 @@
 }
 
 .content-sidebar .widget a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 .content-sidebar .widget pre {
@@ -70,7 +70,7 @@
 .content-sidebar .widget input[type="button"],
 .content-sidebar .widget input[type="reset"],
 .content-sidebar .widget input[type="submit"] {
-	background-color: $green-dark;
+	background-color: $accent-dark;
 	border: 0;
 	color: #fff;
 }
@@ -81,13 +81,13 @@
 .content-sidebar .widget input[type="reset"]:focus,
 .content-sidebar .widget input[type="submit"]:hover,
 .content-sidebar .widget input[type="submit"]:focus {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .content-sidebar .widget input[type="button"]:active,
 .content-sidebar .widget input[type="reset"]:active,
 .content-sidebar .widget input[type="submit"]:active {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .content-sidebar .widget .wp-caption {
@@ -109,7 +109,7 @@
 }
 
 .content-sidebar .widget .widget-title a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 /* List Style Widgets*/
@@ -202,7 +202,7 @@
 }
 
 .content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 .content-sidebar.widget_twentyfourteen_ephemera blockquote cite {

@@ -19,7 +19,7 @@
 }
 
 .widget a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 .widget h1,
@@ -159,7 +159,7 @@
 .widget input[type="button"],
 .widget input[type="reset"],
 .widget input[type="submit"] {
-	background-color: $green-dark;
+	background-color: $accent-dark;
 	border: 0;
 	font-size: 12px;
 	padding: 5px 15px 4px;
@@ -171,13 +171,13 @@
 .widget input[type="reset"]:focus,
 .widget input[type="submit"]:hover,
 .widget input[type="submit"]:focus {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .widget input[type="button"]:active,
 .widget input[type="reset"]:active,
 .widget input[type="submit"]:active {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .widget .wp-caption {
@@ -199,7 +199,7 @@
 }
 
 .widget-title a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 /* Calendar Widget*/
@@ -228,13 +228,13 @@
 }
 
 .widget_calendar tbody a {
-	background-color: $green-dark;
+	background-color: $accent-dark;
 	color: #fff;
 	display: block;
 }
 
 .widget_calendar tbody a:hover {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .widget_calendar tbody a:hover {
@@ -286,7 +286,7 @@
 }
 
 .widget_twentyfourteen_ephemera .entry-meta a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 .widget_twentyfourteen_ephemera .entry-content ul,

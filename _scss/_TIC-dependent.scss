@@ -33,7 +33,7 @@
   border-right: none;
 }
 .entry-content table tbody tr:nth-child(even) {
-  background: $green-light;
+  background: $accent-light;
 }
 
 /*-===================general blocks and such==========*/
@@ -223,14 +223,14 @@
 .tl_card_footer{
     clear:both;
     text-align:center;
-    background:lighten($green-light,5%);
+    background:lighten($accent-light,5%);
     transition:background 250ms, bottom 500ms;
     position:absolute;
     bottom:-1.85em;
     left:0;
     width:100%;
     &:hover{
-      background:darken($green-light,5%);
+      background:darken($accent-light,5%);
     }
     a{
       color:$secondary-color-black;

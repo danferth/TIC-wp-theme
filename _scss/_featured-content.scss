@@ -52,7 +52,7 @@
 }
 
 .featured-content a:hover {
-	color: $green-reg;
+	color: $accent-reg;
 }
 
 .featured-content .entry-meta {
@@ -128,12 +128,12 @@
 }
 
 .slider-control-paging a:hover:before {
-	background-color: $green-reg;
+	background-color: $accent-reg;
 }
 
 .slider-control-paging .slider-active:before,
 .slider-control-paging .slider-active:hover:before {
-	background-color: $green-dark;
+	background-color: $accent-dark;
 }
 
 .slider-direction-nav {
@@ -167,7 +167,7 @@
 }
 
 .slider-direction-nav a:hover {
-	background-color: $green-dark;
+	background-color: $accent-dark;
 }
 
 .slider-direction-nav a:before {

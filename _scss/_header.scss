@@ -68,12 +68,12 @@
 .search-toggle.active {
 	background-color: $blue-dark;
 	&:before{
-		color: $green-light;
+		color: $accent-light;
 	}
 }
 
 .search-toggle:before {
-	color: $green-reg;
+	color: $accent-reg;
 	content: "\f400";
 	font-size: 20px;
 	margin-top: 14px;
@@ -93,7 +93,7 @@
 }
 
 .search-box {
-	background-color: $green-dark;
+	background-color: $accent-reg;
 	padding: 12px;
 }
 

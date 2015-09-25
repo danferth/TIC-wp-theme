@@ -7,9 +7,9 @@ $blue-light:	 hsl(202.2, 50.9%, 89.6%);
 $blue-reg:		 hsl(201.2, 93.5%, 36.3%);
 $blue-dark:		 hsl(201.4, 100%, 22.5%);
 //accent----------------------------------
-$green-light:	 hsl(78.9, 69%, 74.7%);
-$green-reg:	   hsl(78.7, 66.8%, 63.3%);
-$green-dark:	 hsl(78.2, 54.7%, 48.4%);
+$accent-light:	 hsl(32.7, 80.7%, 59.4%);
+$accent-reg:	   hsl(32.7, 100%, 44.3%);
+$accent-dark:	 hsl(33, 100%, 33.5%);
 //text------------------------------------
 $title-color-black:     black;
 $body-color-black:      rgba(black,.87);
@@ -27,7 +27,6 @@ $faint-color-white:     rgba(white, .18);
 $font-body: 	"Source Sans Pro", sans-serif;
 $font-title: 	"Oswald", sans-serif;
 //===========================================
-
 //layout variables
 $nav-bg:						$blue-reg;
 $nav-hover:					$blue-dark;
@@ -36,5 +35,5 @@ $nav-second-text:   $blue-dark;
 $nav-second-hover:  $blue-dark;
 $nav-side-bg:				$blue-reg;
 $nav-side-hover:		$blue-dark;
-$nav-link-current:	$green-light;
+$nav-link-current:	$accent-light;
 $side-bg:						$blue-reg;
