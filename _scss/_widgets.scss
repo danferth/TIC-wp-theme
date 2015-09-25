@@ -159,7 +159,7 @@
 .widget input[type="button"],
 .widget input[type="reset"],
 .widget input[type="submit"] {
-	background-color: $accent-dark;
+	background-color: $accent-reg;
 	border: 0;
 	font-size: 12px;
 	padding: 5px 15px 4px;
@@ -171,13 +171,13 @@
 .widget input[type="reset"]:focus,
 .widget input[type="submit"]:hover,
 .widget input[type="submit"]:focus {
-	background-color: $accent-reg;
+	background-color: $accent-dark;
 }
 
 .widget input[type="button"]:active,
 .widget input[type="reset"]:active,
 .widget input[type="submit"]:active {
-	background-color: $accent-reg;
+	background-color: $accent-dark;
 }
 
 .widget .wp-caption {
