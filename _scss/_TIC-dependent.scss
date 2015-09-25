@@ -60,7 +60,7 @@
   clear: both;
 }
 .product_block {
-  background: lighten($faint-color-black,50%);
+  background: lighten($blue-light,3%);
   padding-left: .5em;
   margin-bottom: .5em;
 }
@@ -104,7 +104,7 @@
 }
 
 .cat_block {
-  background: lighten($faint-color-black,50%);
+  background: $blue-light;
   padding: .1em .5em;
   transition: background 300ms;
   cursor: pointer;
@@ -116,7 +116,7 @@
   clear: both;
 }
 .cat_block:hover {
-  background: $faint-color-black;
+  background: lighten($blue-light,3%);
 }
 .cat_block ul {
   margin: 0;

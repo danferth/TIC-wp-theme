@@ -431,10 +431,9 @@ del {
 }
 
 hr{
-  height:2px;
+  height:1.5px;
   border:none;
   margin: 1em 0;
-  border-top:1px solid $blue-light;
   background:linear-gradient(to right,
     rgba($blue-reg, 0)  0%,
     rgba($blue-reg, 1) 45%,
