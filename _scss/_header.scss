@@ -66,17 +66,15 @@
 
 .search-toggle:hover,
 .search-toggle.active {
-	background-color: $accent-dark;
-	&:before{
-		color: $primary-light;
-	}
+	background-color: $primary-dark;
 }
 
 .search-toggle:before {
-	color: $primary-dark;
+	color: $title-color-white;
 	content: "\f400";
 	font-size: 20px;
 	margin-top: 14px;
+	font-weight:bold;
 }
 
 .search-toggle .screen-reader-text {
