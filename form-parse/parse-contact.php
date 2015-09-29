@@ -4,7 +4,7 @@ date_default_timezone_set('America/Los_Angeles');
 $first_name = trim($_POST['firstName']);
 $query_string = '?first_name=' . $first_name;
 $server_dir = $_SERVER['HTTP_HOST'] . '/';
-$next_page = 'submit/';
+$next_page = 'contact-submit/';
 header('HTTP/1.1 303 See Other');
 
 	if (is_array($_POST)){
