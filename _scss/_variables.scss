@@ -28,12 +28,13 @@ $font-body: 	"Source Sans Pro", sans-serif;
 $font-title: 	"Oswald", sans-serif;
 //===========================================
 //layout variables
-$nav-bg:						$primary-reg;
-$nav-hover:					$primary-dark;
+$nav-bg:						$primary-dark;
+$nav-hover:					$primary-reg;
 $nav-second-bg: 		$primary-light;
 $nav-second-text:   $primary-dark;
 $nav-second-hover:  $primary-dark;
-$nav-side-bg:				$primary-reg;
-$nav-side-hover:		$primary-dark;
+$nav-side-bg:				$primary-dark;
+$nav-side-hover:		$primary-reg;
 $nav-link-current:	$accent-reg;
-$side-bg:						$primary-reg;
+$side-bg:						$primary-dark;
+$footer-bg:					$primary-dark;

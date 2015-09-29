@@ -445,13 +445,13 @@ hr{
  * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: $accent-light;
+	background: $primary-light;
 	color: $primary-dark;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: $accent-light;
+	background: $primary-light;
 	color: $primary-dark;
 	text-shadow: none;
 }
