@@ -1,12 +1,10 @@
 <?php
 require_once("PHPMailer/PHPMailerAutoload.php");
-
-
 date_default_timezone_set('America/Los_Angeles');
 $first_name = trim($_POST['firstName']);
 $query_string = '?first_name=' . $first_name;
-$server_dir = $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['PHP_SELF']), '/\\') . '/';
-$next_page = 'submit.php';
+$server_dir = $_SERVER['HTTP_HOST'] . '/';
+$next_page = 'submit/';
 header('HTTP/1.1 303 See Other');
 
 	if (is_array($_POST)){
@@ -51,12 +49,14 @@ header('HTTP/1.1 303 See Other');
 			if (!$mail->send()){
 				$mail_error = $mail->ErrorInfo;
 				$error_date = date('m\-d\-Y\-h:iA');
-				$log = "logs/error.txt";
+				$log = "logs/contact-error.txt";
 				$fp = fopen($log,"a+");
 				fwrite($fp,$error_date . "\n" . $mail_error . "\n\n");
 				fclose($fp);
 				header('Location: http://' . $server_dir . $next_page . $query_string);
-			}else{header('Location: http://' . $server_dir . $next_page . $query_string);}
+			}else{
+				header('Location: http://' . $server_dir . $next_page . $query_string);
+			}
 		}
 	}
 ?>
