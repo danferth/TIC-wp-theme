@@ -43,11 +43,10 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 </article><!-- #post-## -->
 <script type="text/javascript">
 <?php
-
 //try creating form-success.js and form.error.js and set wp_enqueue_script in the if statement...
 if($form_success == "true"){
 	echo "
-		onload.swal({
+		window.onload = swal({
 			title: 'Success',
 			text: 'Your subition was a success we will contact you shortly about your inquery!',
 			type: 'success',
@@ -56,7 +55,7 @@ if($form_success == "true"){
 	";
 }elseif($form_success == "false"){
 	echo "
-		onload.swal({
+		window.onload = swal({
 			title: 'Whoops',
 			text: 'There was an error, we have logged this and will have a fix soon!',
 			type: 'error',
