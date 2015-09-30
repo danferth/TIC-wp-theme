@@ -7,7 +7,9 @@
  * @since Twenty Fourteen 1.0
  */
 
-$form_success = $_GET['success'];
+if(isset($_GET['success'])){
+	$form_success = $_GET['success'];
+}
 
 
 if(get_post_meta($post->ID, "form-parse")){
@@ -40,6 +42,35 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 <script type="text/javascript">
+<?php
+
+//try creating form-success.js and form.error.js and set wp_enqueue_script in the if statement...
+if($form_success == "true"){
+	echo "
+		onload.swal({
+			title: 'Success',
+			text: 'Your subition was a success we will contact you shortly about your inquery!',
+			type: 'success',
+			confermationButtonTest: 'OK'
+		});
+	";
+}elseif($form_success == "false"){
+	echo "
+		onload.swal({
+			title: 'Whoops',
+			text: 'There was an error, we have logged this and will have a fix soon!',
+			type: 'error',
+			confermationButtonTest: 'OK'
+		});
+	";
+}
+
+?>
+
+
+
+
+
 <?php 
 echo 'onload=function(){document.forms["' . $form_id .'"].reset()};
 jQuery(document).ready(function($){
