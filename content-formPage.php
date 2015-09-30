@@ -7,8 +7,10 @@
  * @since Twenty Fourteen 1.0
  */
 
+$form_success = $_GET['success'];
+
+
 if(get_post_meta($post->ID, "form-parse")){
-// $parse = get_template_directory() . '/form-parse/' . get_post_meta($post->ID, "form-parse", true) . '.php';
 $parse = '/wp-content/themes/TIC/form-parse/' . get_post_meta($post->ID, "form-parse", true) . '.php';
 }
 
@@ -37,3 +39,10 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<script type="text/javascript">
+<?php 
+echo 'onload=function(){document.forms["' . $form_id .'"].reset()};
+jQuery(document).ready(function($){
+$("#' . $form_id . '").validate();
+});'; ?>
+</script>
