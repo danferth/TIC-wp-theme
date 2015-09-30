@@ -11,6 +11,7 @@ if(isset($_GET['success'])){
 	$form_success = $_GET['success'];
 }
 
+$first_name = $_GET['first_name'];
 
 if(get_post_meta($post->ID, "form-parse")){
 $parse = '/wp-content/themes/TIC/form-parse/' . get_post_meta($post->ID, "form-parse", true) . '.php';
@@ -19,7 +20,6 @@ $parse = '/wp-content/themes/TIC/form-parse/' . get_post_meta($post->ID, "form-p
 if(get_post_meta($post->ID, "form-ID")){
 $form_id = get_post_meta($post->ID, "form-ID", true);
 }
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -32,7 +32,10 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 	<div class="entry-content-full-page">
 			<?php echo "<form action='" . $parse . "' method='POST' id='" . $form_id . "'>"; ?>
 						
-				<?php the_content(); ?>
+				<?php
+
+				the_content();
+				?>
 
 			</form>
 			
@@ -43,23 +46,24 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 </article><!-- #post-## -->
 <script type="text/javascript">
 <?php
-//try creating form-success.js and form.error.js and set wp_enqueue_script in the if statement...
 if($form_success == "true"){
 	echo "
 		window.onload = swal({
 			title: 'Success',
-			text: 'Your subition was a success we will contact you shortly about your inquery!',
+			text: '<b>" . $first_name . "</b> your submission was a success we will contact you shortly about your inquiry!',
 			type: 'success',
-			confermationButtonTest: 'OK'
+			html: true,
+			confirmButtonText: 'Thanks'
 		});
 	";
 }elseif($form_success == "false"){
 	echo "
 		window.onload = swal({
 			title: 'Whoops',
-			text: 'There was an error, we have logged this and will have a fix soon!',
+			text: 'Our apologies but there was an error <b>" . $first_name . "</b>, we have logged this and will have a fix soon!',
 			type: 'error',
-			confermationButtonTest: 'OK'
+			html: true,
+			confirmButtonText: 'well shit!'
 		});
 	";
 }
