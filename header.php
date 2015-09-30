@@ -29,9 +29,9 @@
 	<![endif]-->
   <?php
     wp_head();
-    wp_enqueue_script('TweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js');
-    wp_enqueue_script('tic.js', get_template_directory_uri() . '/js/tic.js');
-    wp_enqueue_script('validate.js', get_template_directory_uri() . '/js/jquery.validate.min.js');
+    wp_enqueue_script('TweenMax', get_template_directory_uri() . '/js/lib/TweenMax.min.js');
+    wp_enqueue_script('validate.js', get_template_directory_uri() . '/js/lib/jquery.validate.min.js');
+    wp_enqueue_script('tic.js', get_template_directory_uri() . '/js/lib/tic.js');
   ?>
 </head>
 

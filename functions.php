@@ -254,7 +254,7 @@ function twentyfourteen_scripts() {
 
 	wp_enqueue_script( 'twentyfourteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150315', true );
   //sweet alert for forms and what not needs to be in head so can call on page by page basis. ie script in PHP if on form template
-  wp_enqueue_script('sweetalert.js', get_template_directory_uri() . '/js/sweetalert.min.js', array(), '2015');
+  wp_enqueue_script('sweetalert.js', get_template_directory_uri() . '/js/lib/sweetalert.min.js', array(), '2015');
 }
 add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
 
