@@ -4,7 +4,7 @@ date_default_timezone_set('America/Los_Angeles');
 $first_name = trim($_POST['firstName']);
 $query_string = '?first_name=' . $first_name;
 $server_dir = $_SERVER['HTTP_HOST'] . '/';
-$next_page = 'contact-submit/';
+$next_page = 'contact-form/';
 header('HTTP/1.1 303 See Other');
 
 	if (is_array($_POST)){
@@ -43,7 +43,7 @@ header('HTTP/1.1 303 See Other');
 			$mail->setFrom($_POST['email'], $_POST['firstName']." ".$_POST['lastName']);
 			$mail->addReplyTo($_POST['email'], $_POST['firstName']." ".$_POST['lastName']);
 			//$mail->addAddress('web_submissions@htslabs.com', 'Contact Form');
-			$mail->addAddress('dan@htslabs.com', 'Contact Form');	//uncoment for testing to dan@htslabs.com
+			//$mail->addAddress('dan@htslabs.com', 'Contact Form');	//uncoment for testing to dan@htslabs.com
 			$mail->Subject = "Contact From - " . $_POST['company'];
 			$mail->msgHTML($body);
 			if (!$mail->send()){
@@ -53,8 +53,10 @@ header('HTTP/1.1 303 See Other');
 				$fp = fopen($log,"a+");
 				fwrite($fp,$error_date . "\n" . $mail_error . "\n\n");
 				fclose($fp);
+				$query_string = '?success=false';
 				header('Location: http://' . $server_dir . $next_page . $query_string);
 			}else{
+				$query_string .= '&success=true';
 				header('Location: http://' . $server_dir . $next_page . $query_string);
 			}
 		}

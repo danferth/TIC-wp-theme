@@ -7,8 +7,10 @@
  * @since Twenty Fourteen 1.0
  */
 
+$server_dir = $_SERVER['HTTP_HOST'] . '/';
+header('Location: http://' . $server_dir);
+
 if(get_post_meta($post->ID, "form-parse")){
-// $parse = get_template_directory() . '/form-parse/' . get_post_meta($post->ID, "form-parse", true) . '.php';
 $parse = '/wp-content/themes/TIC/form-parse/' . get_post_meta($post->ID, "form-parse", true) . '.php';
 }
 

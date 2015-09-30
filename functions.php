@@ -225,6 +225,9 @@ function twentyfourteen_scripts() {
 	// Load our main stylesheet.
 	wp_enqueue_style( 'tic-style', get_stylesheet_uri() );
 
+	// Load sweet alert stylesheet
+	wp_enqueue_style( 'sweetalert', get_template_directory_uri() . '/css/sweetalert.css');
+
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style' ), '20131205' );
 	wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
