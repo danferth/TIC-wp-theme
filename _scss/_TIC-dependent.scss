@@ -107,13 +107,24 @@
   display: table;
   clear: both;
 }
+.category_blocks{
+  min-width:600px;
+  width:60%;
 
+  @media screen and (max-width:650px){
+    min-width:100%;
+    width:100%;
+
+  }
+}
 .cat_block {
+  box-sizing:border-box;
   background: $primary-light;
-  padding: .1em .5em;
+  padding: .5em .75em 1em .75em;
   transition: background 300ms;
   cursor: pointer;
   margin-bottom: .5em;
+  width:100%;
 }
 .cat_block:after {
   content: "";
