@@ -4,7 +4,6 @@ date_default_timezone_set('America/Los_Angeles');
 $first_name = trim($_POST['fname']);
 $query_string = '?first_name=' . $first_name;
 $server_dir = $_SERVER['HTTP_HOST'] . '/';
- //form slug for redirect
 $next_page = 'go-paperless/';
 header('HTTP/1.1 303 See Other');
 
@@ -31,7 +30,6 @@ header('HTTP/1.1 303 See Other');
 		if ($_POST['email']){
 			$mail = new PHPMailer;
 			$mail->setFrom($_POST['email'], $_POST['fname']." ".$_POST['lname']);
-			//dont forget to change this to proper reciever
 			$mail->addReplyTo($_POST['email'], $_POST['fname']." ".$_POST['lname']);
 			//$mail->addAddress('accountsreceivable@htslabs.com', 'Go paperless');
 			$mail->addAddress('dan@htslabs.com', 'Contact Form');	//uncoment for testing to dan@htslabs.com
@@ -40,7 +38,6 @@ header('HTTP/1.1 303 See Other');
 			if (!$mail->send()){
 				$mail_error = $mail->ErrorInfo;
 				$error_date = date('m\-d\-Y\-h:iA');
-				//error file name
 				$log = "logs/go-paperless-error.txt";
 				$fp = fopen($log,"a+");
 				fwrite($fp,$error_date . "\n" . $mail_error . "\n\n");

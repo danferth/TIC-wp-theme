@@ -43,6 +43,10 @@ input[type="submit"] {
 	margin-bottom:20px;
 }
 
+form fieldset input[type="submit"]{
+	display:block;
+}
+
 button:hover,
 button:focus,
 .button:hover,
