@@ -33,6 +33,38 @@ $form_id = get_post_meta($post->ID, "form-ID", true);
 			<?php echo "<form action='" . $parse . "' method='POST' id='" . $form_id . "'>"; ?>
 						
 				<?php
+/*
+CUSTOM FIELDS NEEDED:
+---------------------
+form-parse 	= file name of parse file exclude '.php'
+form_ID 		= ID of form used for form ID and jQuery validate
+
+
+EXTRA FILES NEEDED FOR THIS TO WORK:
+------------------------------------
+parse-$form-parse
+'form name'-error.txt make sure this is on server and has permisions 770
+
+
+BASIC FORM SETUP
+----------------
+Note: first name field that gets passed must be $_GET['first_name'] 
+
+<span>
+	<input placeholder="label"> this is not required
+</span>
+
+<span id="ID of input">
+	<input placeholder="label" required>
+</span>
+
+
+These do not require spans
+--------------------------
+<textarea>
+<input type="submit">
+*/
+
 
 				the_content();
 				?>
