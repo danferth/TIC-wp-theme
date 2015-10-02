@@ -8,6 +8,19 @@
 .entry-content {
   width: 100%;
 }
+//form fixes
+form fieldset span input{
+  display:block;
+}
+form fieldset span label{
+  display:block;
+}
+form fieldset span label.error{
+  color:red;
+}
+form fieldset span{
+  display:inline-block;
+}
 /* ==================page/post table===========================*/
 .entry-content table {
   border-collapse: collapse;

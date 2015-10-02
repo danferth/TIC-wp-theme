@@ -102,13 +102,14 @@ if($form_success == "true"){
 
 ?>
 
-
-
-
-
-<?php 
-echo 'onload=function(){document.forms["' . $form_id .'"].reset()};
-jQuery(document).ready(function($){
-$("#' . $form_id . '").validate();
-});'; ?>
+function hasHTML5validation(){
+	return (typeof document.createElement('input').checkValidity == 'function');
+}
+if( !hasHTML5validation() ){
+	<?php 
+	echo 'onload=function(){document.forms["' . $form_id .'"].reset()};
+	jQuery(document).ready(function($){
+		$("#' . $form_id . '").validate();
+	});'; ?>
+}
 </script>
