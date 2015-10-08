@@ -228,6 +228,9 @@ function twentyfourteen_scripts() {
 	// Load sweet alert stylesheet
 	wp_enqueue_style( 'sweetalert', get_template_directory_uri() . '/css/sweetalert.css');
 
+		// Load Foundation 5 grid only stylesheet
+	wp_enqueue_style( 'foundation-grid', get_template_directory_uri() . '/css/foundation.css');
+
 	// Load the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentyfourteen-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentyfourteen-style' ), '20131205' );
 	wp_style_add_data( 'twentyfourteen-ie', 'conditional', 'lt IE 9' );
@@ -255,6 +258,8 @@ function twentyfourteen_scripts() {
 	wp_enqueue_script( 'twentyfourteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150315', true );
   //sweet alert for forms and what not needs to be in head so can call on page by page basis. ie script in PHP if on form template
   wp_enqueue_script('sweetalert.js', get_template_directory_uri() . '/js/lib/sweetalert.min.js', array(), '2015');
+  //waypoints js for scroll to events
+  wp_enqueue_script('waypoint.js', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', array('jquery'), '2015', true);
 }
 add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
 
