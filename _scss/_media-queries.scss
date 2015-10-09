@@ -107,6 +107,7 @@
 	.attachment span.entry-date:before,
 	.entry-content .edit-link a:before,
 	.entry-content-full-page .edit-link a:before,
+	.entry-content-total-full-page .edit-link a:before,
 	.entry-meta .edit-link a:before,
 	.site-content .byline a:before,
 	.site-content .comments-link a:before,
@@ -185,6 +186,7 @@
 
 	.entry-content .edit-link a:before,
 	.entry-content-full-page .edit-link a:before,
+	.entry-content-total-full-page .edit-link a:before,
 	.entry-meta .edit-link a:before {
 		content: "\f411";
 	}
@@ -273,6 +275,11 @@
 	.site-content footer.entry-meta {
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+	
+	.site-content .entry-content-total-full-page{
+		padding-left:0;
+		padding-right:0;
 	}
 
 	.singular .site-content .hentry.has-post-thumbnail {
@@ -863,6 +870,7 @@
 	.footer-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link,
 	.footer-sidebar .widget_twentyfourteen_ephemera .entry-content table,
 	.footer-sidebar .widget_twentyfourteen_ephemera .entry-content-full-page table,
+	.footer-sidebar .widget_twentyfourteen_ephemera .entry-content-total-full-page table,
 	.primary-sidebar .widget_twentyfourteen_ephemera .entry-title,
 	.primary-sidebar .widget_twentyfourteen_ephemera .entry-meta,
 	.primary-sidebar .widget_twentyfourteen_ephemera .wp-caption-text,
@@ -971,6 +979,11 @@
 		padding-left: 15px;
 	}
 
+	.site-content .entry-content-total-full-page{
+		padding-left:0;
+		padding-right:0;
+	}
+
 	.full-width .archive-header,
 	.full-width .comments-area,
 	.full-width .image-navigation,
@@ -1062,6 +1075,12 @@
 		padding-right: 30px;
 		padding-left: 30px;
 	}
+
+	.site-content .entry-content-total-full-page{
+		padding-left:0;
+		padding-right:0;
+	}
+
 	.site-content form{
 		width:80%;
 	}
