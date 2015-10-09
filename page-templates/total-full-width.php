@@ -7,6 +7,9 @@
  * @since Twenty Fourteen 1.0
  */
 
+/*
+this page is the same as full width page except it has 0 padding on left and right to have a total full with page. to use with foundation rows and what not
+*/
 get_header(); ?>
 
 <div id="main-content" class="main-content">
