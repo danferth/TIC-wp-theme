@@ -1,0 +1,191 @@
+<!-- styles -->
+<style>
+.wrap_home {
+  width: 100%;
+  min-height: 400px;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 20px auto;
+}
+@media screen and (max-width: 790px) {
+  .wrap_home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    height: 100%;
+  }
+}
+
+.box {
+  -webkit-flex-basis: 240px;
+      -ms-flex-preferred-size: 240px;
+          flex-basis: 240px;
+  margin: 0 0 20px 0;
+}
+.box h1 {
+  color: white;
+  margin: 3% 0;
+  padding: 1% 2% 0 2%;
+  font: 300 1.5em/1 "oswald", sans-serif;
+}
+.box p {
+  color: white;
+  padding: 0 2%;
+  margin: 0 0 3% 0;
+  font: normal 1em/1.5 sans-serif;
+}
+@media screen and (max-width: 790px) {
+  .box {
+    width: 100%;
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    margin-bottom: 20px;
+  }
+  .box:last-of-type {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .box {
+    -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+  }
+  .box:last-of-type {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+}
+
+.box:nth-child(1) {
+  background: teal;
+}
+.box:nth-child(2) {
+  background: #af0505;
+}
+.box:nth-child(3) {
+  background: dodgerblue;
+}
+.box:nth-child(4) {
+  background: #825a00;
+}
+
+.image_wrap {
+  position: relative;
+  width: 98%;
+  margin: 1% auto;
+  height: 200px;
+  overflow: hidden;
+}
+.image_wrap .image_wrap_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image_wrap .image_wrap_inner img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
+
+<!-- HTML -->
+
+<p>
+All Application uses for our products boil down to a specific task in their workflow.  Have the user tell us what they essentially need to do.  We do not sell enzymes or cells, or machines, our products are specific to a use a need to accomplish one task in the lab. This page helps us narrow down the task to a set of products.
+</p>
+
+  <div class="wrap_home">
+      <div class="box biology">
+        <h1>Cell Growth</h1>
+        <div class="image_wrap">
+          <div class="image_wrap_inner">
+            <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/cell-growth.jpg" alt="" />
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe asperiores veniam earum, assumenda obcaecati voluptates praesentium fugit vero amet rerum fuga placeat est quam odio provident culpa sint officiis, quia.</p>
+      </div>
+      <div class="box chemistry">
+        <h1>Synthesize</h1>
+        <div class="image_wrap">
+          <div class="image_wrap_inner">
+            <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/synthesize.jpg" alt="" />
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, rem. Voluptate quo perspiciatis provident eligendi. Dicta veritatis, quisquam debitis assumenda magnam eos! Vel ad ab vitae blanditiis, minima voluptatem odio!</p>
+      </div>
+      <div class="box biology">
+        <h1>Analyze</h1>
+        <div class="image_wrap">
+          <div class="image_wrap_inner">
+            <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/analyze.jpg" alt="" />
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe asperiores veniam earum, assumenda obcaecati voluptates praesentium fugit vero amet rerum fuga placeat est quam odio provident culpa sint officiis, quia.</p>
+      </div>
+      <div class="box chemistry">
+        <h1>Purify</h1>
+        <div class="image_wrap">
+          <div class="image_wrap_inner">
+            <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/purify.jpg" alt="" />
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, rem. Voluptate quo perspiciatis provident eligendi. Dicta veritatis, quisquam debitis assumenda magnam eos! Vel ad ab vitae blanditiis, minima voluptatem odio!</p>
+      </div>
+  </div>
+
+  <!-- JS -->
+
+  <script>
+jQuery(document).ready(function($){
+var boxes = $('.box');
+TweenMax.from(boxes, 1, {scale:.90, opacity:0});
+
+$('.box').on('click', function(){
+window.location.assign('http://0072015.htslabs.com/product-page/');
+});
+});
+</script>

@@ -1,0 +1,125 @@
+<!-- style -->
+
+<style>
+.wrap_home {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  margin: 20px auto;
+}
+@media screen and (max-width: 900px) {
+  .wrap_home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+.box {
+  width: 40%;
+}
+.box h1 {
+  color: white;
+  margin: 0;
+  padding: 1% 2% 0 2%;
+  font: 300 1.5em/1 "oswald", sans-serif;
+}
+.box p {
+  color: white;
+  padding: 0 2%;
+  margin: 2% 0;
+  font: normal 1em/1.5 sans-serif;
+}
+@media screen and (max-width: 900px) {
+  .box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .box:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.biology {
+  background: teal;
+}
+
+.chemistry {
+  background: dodgerblue;
+}
+
+.image_wrap {
+  position: relative;
+  width: 98%;
+  margin: 1% auto;
+  height: 250px;
+  overflow: hidden;
+}
+.image_wrap .image_wrap_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image_wrap .image_wrap_inner img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<!-- HTML -->
+
+<p><b>Thomson Instrument Company</b> has been serving the pharmaceutical and life science industries since 1970. Our ever lasting commitment to provide customer satisfaction and quality products has enabled us to maintain a solid reputation throughout the industry. We also add to our services by having four trained scientists on staff ready and willing to help with method development.</p>
+<div class="wrap_home">
+  <div class="box biology" data-link="goal">
+    <div class="image_wrap">
+      <div class="image_wrap_inner">
+        <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/Biology.jpg" alt="" />
+      </div>
+    </div>
+    <h1>Biology</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe asperiores veniam earum, assumenda obcaecati voluptates praesentium fugit vero amet rerum fuga placeat est quam odio provident culpa sint officiis, quia.</p>
+  </div>
+  <div class="box chemistry" data-link="goal">
+    <div class="image_wrap">
+      <div class="image_wrap_inner">
+        <img src="http://0072015.htslabs.com/wp-content/themes/TIC/images/chemistry.jpg" alt="" />
+      </div>
+    </div>
+    <h1>Chemistry</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, rem. Voluptate quo perspiciatis provident eligendi. Dicta veritatis, quisquam debitis assumenda magnam eos! Vel ad ab vitae blanditiis, minima voluptatem odio!</p>
+  </div>
+</div>
+
+<!-- JS -->
+
+<script>
+jQuery(document).ready(function($){
+var boxes = $('.box');
+TweenLite.from(boxes, 1, {scale:.90,opacity:0});
+
+$('.box').on('click', function(){
+window.location.assign('http://0072015.htslabs.com/goal/');
+});
+
+
+});
+</script>

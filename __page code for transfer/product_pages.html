@@ -1,0 +1,239 @@
+<!-- styles -->
+<style>
+.entry-content-full-page{padding:0;} /* this is for page padding so totally for real full width*/
+.learnBtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-top: 8%;
+}
+@media screen and (max-width: 1024px) {
+  .learnBtn {
+    padding-top: 0;
+  }
+}
+.video{
+overflow:hidden;
+}
+.video video {
+  display: block;
+  margin: 0 auto 24px auto;
+}
+
+.notes {
+  overflow: hidden;
+}
+
+.notes ul {
+  background: #d9d9d9;
+  border: 1px dashed #cccccc;
+}
+.notes ul li {
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border: 3px solid #d9d9d9;
+}
+
+figure img {
+  margin: 0 auto;
+}
+
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.image-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100%;
+}
+
+.image-wrap-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-wrap-inner img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+</style>
+
+<!-- HTML -->
+<!--introduction-->
+  <div class="row intro">
+    <div class="column small-12 medium-6 large-4">
+      <div class="image-wrap">
+        <div class="image-wrap-inner">
+          <img class="intro_img" src="http://htslabs.com/images/mega-dims.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="column small-12 medium-6 large-8">
+      <h1>Introduction</h1>
+      <p>Velit vitae sodales ullamcorper, mauris turpis sit nec massa, erat cras eleifend etiam sed. Diam et elit mollis scelerisque, blandit quam urna lorem vestibulum. Egestas pulvinar eu lobortis, lacus etiam fusce nonummy amet. Vehicula neque amet sint
+        enim, maecenas est nec nibh. Pellentesque nonummy fringilla gravida urna, velit duis ante suscipit vel, praesent aptent mattis a tellus. Massa sem turpis eu, velit in nulla phasellus aenean, accusantium eu arcu quisque. Nulla tellus semper orci,
+        vel curabitur egestas tellus vivamus. Lorem magna dolor at etiam, viverra quis quidem donec.</p>
+    </div>
+  </div>
+  <!--key features-->
+  <div class="row features">
+    <div class="column small-12 medium-12 large-9">
+      <h1>Key Features</h1>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+        <li>Vestibulum auctor dapibus neque.</li>
+      </ul>
+    </div>
+    <div class=" learnBtn column small-12 medium-12 large-3">
+      <button>Learn More</button>
+    </div>
+  </div>
+  <!--video-->
+  <div class="row video">
+    <div class="column small-12">
+      <h1>video</h1>
+      <video width="600" height="337" controls="" <!--autoplay="autoplay" --> >
+        <source src="http://htslabs.com/techcenter/video/videos/fv-overview.mp4" type="video/mp4">
+          <source src="http://htslabs.com/techcenter/video/videos/fv-overview.ogv" type="video/ogg">
+      </video>
+    </div>
+  </div>
+  <div class="row data">
+    <div class="column small-12 medium-6 large-6">
+      <h3>Previous Method Incomplete Matrix Clean-Up</h3>
+      <figure id="attachment_734" class="wp-caption aligncenter"><img src="http://0072015.htslabs.com/wp-content/uploads/2015/08/extr-inc-matrix-top-300x131.jpg" alt="Previous Method: Chromatogram of Huperzine A powdered extract, Huperzia serrata" width="236" height="97" class="size-medium wp-image-734">
+        <figcaption
+        class="wp-caption-text">Previous Method: Chromatogram of Huperzine A powdered extract, <i>Huperzia serrata</i></figcaption>
+      </figure>
+      <figure id="attachment_735" class="wp-caption aligncenter"><img src="http://0072015.htslabs.com/wp-content/uploads/2015/08/extr-inc-matrix-bottom-300x124.jpg" alt="Previous Method: Chromatogram of Huperzine A extracted from the Chinese club moss, Huperzine serrata" width="236" height="197" class="size-medium wp-image-735">
+        <figcaption
+        class="wp-caption-text">Previous Method: Chromatogram of Huperzine A extracted from the Chinese club moss, <i>Huperzine serrata</i></figcaption>
+      </figure>
+    </div>
+
+    <div class="column small-12 medium-6 large-6">
+      <h3>New Method Confirm Correctly</h3>
+      <figure id="attachment_736" class="wp-caption aligncenter"><img src="http://0072015.htslabs.com/wp-content/uploads/2015/08/extr-conf-corect-top-300x126.jpg" alt="New Method: Chromatogram of Huperzine A powdered extract, Huperzia serrata" width="236" height="98" class="size-medium wp-image-736">
+        <figcaption
+        class="wp-caption-text">New Method: Chromatogram of Huperzine A powdered extract, <i>Huperzia serrata</i></figcaption>
+      </figure>
+      <figure id="attachment_736" class="wp-caption aligncenter"><img src="http://0072015.htslabs.com/wp-content/uploads/2015/08/extr-conf-corect-top-300x126.jpg" alt="New Method: Chromatogram of Huperzine A powdered extract, Huperzia serrata" width="236" height="98" class="size-medium wp-image-736">
+        <figcaption
+        class="wp-caption-text">New Method: Chromatogram of Huperzine A powdered extract, <i>Huperzia serrata</i></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="row notes" id="target">
+    <div class="column small-12">
+      <h1>Application Notes</h1>
+      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-6">
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+        <li>
+          <h2>AppNote</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+
+jQuery(document).ready(function($){
+
+var rows = $('.row');
+rows.filter(':even').css({background:"#F7F7F7"});
+rows.filter(':odd').css({background:"#EDEDED"});
+
+var appNotes = $('.notes ul li');
+appNotes.on('mouseover', function(){
+  TweenMax.to(this,.25,{scale:.95});
+});
+
+var appNotes = $('.notes ul li');
+appNotes.on('mouseout', function(){
+  TweenMax.to(this,.25,{scale:1});
+});
+
+TweenLite.from('.intro_img', 4, {opacity:0, ease:Bounce.easeOut});
+
+//this is to have the li items hidden during scroll up
+$('.video video').css({opacity:0});
+var waypoints = $('.video').waypoint({
+  handler: function(){
+  $('.video video').css({opacity:1});
+  TweenMax.from($('.video video'), 1, {delay:.25, scale:.80, x:3000, opacity:0, ease:Power3.easeOut}); 
+  this.destroy();
+},
+  offset: 'bottom-in-view'
+});
+
+//this is to have the li items hidden during scroll up
+$('.notes ul li').css({opacity:0});
+var waypoints = $('#target').waypoint({
+  handler: function(){
+  $('.notes ul li').css({opacity:1});
+  TweenMax.staggerFrom($('.notes ul li'), .6, {delay:.25, scale:.90, y:300, opacity:0, ease:Power3.easeOut},.125); 
+  this.destroy();
+},
+  offset: 'bottom-in-view'
+});
+
+$('.notes div ul li').on('click', function(){
+window.location.assign('http://0072015.htslabs.com/application-note-page/');
+});
+
+});
+
+
+</script>

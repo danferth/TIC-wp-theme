@@ -1,0 +1,126 @@
+<!-- styles -->
+<style>
+.row {
+  background: white;
+}
+
+.product_selection_grid {
+  background: white;
+}
+
+li.prod_item {
+  overflow: hidden;
+  background: #f2f2f2;
+  padding: .5em;
+  border: 6px solid white;
+  border-radius: 10px;
+  cursor:pointer;
+}
+li.prod_item img {
+  float: left;
+  margin: 0 1em 0 0;
+}
+li.prod_item h6 {
+  display: inline;
+  font-weight: bold;
+}
+li.prod_item h6 span {
+  font-size: .8em;
+  font-weight: normal;
+}
+</style>
+
+<!-- HTML -->
+
+    <div class="row main_prod_page_intro">
+      <div class="column small-12 medium-6 large-8">
+        <video class="FV-main-video" width="100%" controls="">
+          <source src="http://htslabs.com/techcenter/video/videos/How-to-use-a-filter-vial.mp4" type="video/mp4">
+            <source src="http://htslabs.com/techcenter/video/videos/How-to-use-a-filter-vial.ogv" type="video/ogg">
+        </video>
+      </div>
+      
+      <div class="column small-12 medium-6 large-4">
+        <p>Thomson Filter Vials (patented) are designed to speed up sample prep and analysis. The plunger filter with different membranes nestles into the vial while simultaneously filtering and readying the sample for any Autosampler. This is a process
+          that minimizes any loss of sample eliminating multiple transfers. Pre-slit caps ensure a no-hassle, clean aliquot withdraw. Eliminating breakage of expensive needles, coring problems on the HPLC or Mass Spec. Thomson Filter Vials are compatible
+          with most standard Autosamplers; such as Agilent® and Waters® including the UHPLC™. The ease of use will make the Filter Vial indispensable in all laboratories.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="column small-12">
+    <ul class=" product_selection_grid small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/standardFV.gif" alt="" />
+        <h6><a href="http://0072015.htslabs.com/filter-vials/standardfilter-vials/">Standard|Filter Vials <span>(120μL Dead Volume)</span></a></h6>
+        <p>Simple replacements for HPLC Vials, HPLC Caps, Syringes, &amp; Syringe Filters. Filter Vials are simple protection for HPLC, GC, GC/MS and LC/MS systems.</p>
+      </li>
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/nanoFV.gif" alt="nano|Filter Vials <span>(High sample recovery)</span>">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/nanofilter-vial/">nano|Filter Vials <span>(High sample recovery)</span></a></h6>
+				<p>Filter Vial dimensions only specially designed for sample conservation, load as little as 10μL of sample for 2μL injection</p>
+      </li>
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/extFV.gif" alt="eXtreme|FV <span>(Multi-Layered Filtration)</span>">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/extractor3dfv/">eXtreme|FV <span>(Multi-Layered Filtration)</span></a></h6>
+				<p>Filter Vial dimensions (12x32mm) with additional multi-layered filter for thick or viscous samples. The Ultimate filtration tool.</p>
+      </li>
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/megaFV.gif" alt="MEGA|FV™ <span>(Filter Once for Multiple Applications)</span>">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/megafv/">MEGA|FV <span>(Filter Once for Multiple Applications)</span></a></h6>
+				<p>For fast filtration of large sample volumes in your daily applications.  Allowing filtration up to 15mL in one vial, moving you quickly from sample clean-up to analysis or storage, and providing clean, filtered samples ready for multiple application</p>
+      </li>
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/eX3DFV.gif" alt="eXtractor3D|FV <span>(Multi-Mode Filtration)</span>">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/extractor3dfv/">eXtractor3D|FV <span>(Multi-Mode Filtration)</span></a></h6>
+				<p>Filter Vial dimensions (12x32mm) Minimize matrix effects such as ion suppression from direct injection.</p>
+      </li>
+      <li class="prod_item">
+        <img src="http://htslabs.com/images/lowFV.gif" alt="Low Evap|Filter Vials <span>(<0.4% in 24hr)</span>">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/low-evapfilter-vials/">Low Evap|Filter Vials <span>(&lt;0.4% in 24hr)</span></a></h6>
+				<p>Standard Filter Vial with Low Evaporation Crimp Cap, limiting evaporation to &lt;0.4% over 24 hours.  Suitable for GC/GCMS applications or any application where minimizing evaporation of samples is critical.</p>
+      </li>
+       <li class="prod_item">
+        <img src="http://htslabs.com/images/products/35005_md.gif" alt="Accessories">
+				<h6><a href="http://0072015.htslabs.com/filter-vials/filter-vial-accessories/">Accessories</a></h6>
+				<p>Accessories to aid in depression of Filter Vials with viscous samples.</p>
+      </li>
+      </ul>
+  </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+jQuery(document).ready(function($){
+
+var equal_height = function(el){
+  var target = $(el),
+      rslt = 0;
+  for(var i = 0; i < target.length; i++){
+    if(rslt < target[i].clientHeight){
+      rslt = target[i].clientHeight;
+    }
+  }
+  target.css({height:rslt+"px"});
+};
+equal_height('.prod_item');
+
+$('.prod_item').on('mouseover',function(){
+  TweenMax.to($(this), .15, {scale:.98});
+});
+$('.prod_item').on('mouseout',function(){
+  TweenLite.to(this, .15, {scale:1});
+});
+
+$('.prod_item').on('click',function(){
+  var link = $(this).find('a');
+  var href = link.attr('href');
+  window.location = href;
+
+});
+
+
+});
+
+
+</script>
