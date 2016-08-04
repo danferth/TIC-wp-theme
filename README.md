@@ -1,1 +1,1 @@
-This project has been discontinued in favor of the [FoundationPress](https://github.com/olefredrik/foundationpress/) starter theme.  You can find the new projuct at [Thomson-wp-theme](https://github.com/danferth/Thomson-wp-theme)
+This project has been discontinued in favor of the [FoundationPress](https://github.com/olefredrik/foundationpress/) starter theme.  You can find the new projuct at [DJ-wp-theme](https://github.com/danferth/DJ-wp-theme)
